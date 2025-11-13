@@ -1,0 +1,195 @@
+@import "tailwindcss";
+
+/* EcoBags Design System - All colors, gradients, fonts, etc. 
+All colors MUST be HSL. */
+
+:root {
+  --background: 35 25% 97%;
+  --foreground: 150 30% 15%;
+
+  --card: 0 0% 100%;
+  --card-foreground: 150 30% 15%;
+
+  --popover: 0 0% 100%;
+  --popover-foreground: 150 30% 15%;
+
+  --primary: 145 45% 45%;
+  --primary-foreground: 0 0% 100%;
+
+  --secondary: 35 35% 85%;
+  --secondary-foreground: 150 30% 15%;
+
+  --muted: 35 25% 92%;
+  --muted-foreground: 150 15% 45%;
+
+  --accent: 145 55% 65%;
+  --accent-foreground: 150 30% 15%;
+
+  --destructive: 0 84.2% 60.2%;
+  --destructive-foreground: 0 0% 100%;
+
+  --border: 35 20% 88%;
+  --input: 35 20% 88%;
+  --ring: 145 45% 45%;
+
+  --radius: 0.75rem;
+  
+  /* Eco-theme custom tokens */
+  --eco-green: 145 45% 45%;
+  --eco-green-light: 145 55% 65%;
+  --eco-green-dark: 145 50% 35%;
+  --eco-beige: 35 35% 85%;
+  --eco-cream: 35 25% 97%;
+  --eco-brown: 30 25% 45%;
+  
+  /* Gradients */
+  --gradient-eco: linear-gradient(135deg, hsl(145 55% 65%) 0%, hsl(145 45% 45%) 100%);
+  --gradient-earth: linear-gradient(180deg, hsl(35 35% 85%) 0%, hsl(35 25% 92%) 100%);
+  
+  /* Shadows */
+  --shadow-soft: 0 4px 20px -4px hsl(145 45% 45% / 0.15);
+  --shadow-card: 0 8px 30px -6px hsl(145 45% 45% / 0.12);
+  
+  /* Transitions */
+  --transition-smooth: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-bounce: all 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  
+  --sidebar-background: 0 0% 98%;
+  --sidebar-foreground: 240 5.3% 26.1%;
+  --sidebar-primary: 240 5.9% 10%;
+  --sidebar-primary-foreground: 0 0% 98%;
+  --sidebar-accent: 240 4.8% 95.9%;
+  --sidebar-accent-foreground: 240 5.9% 10%;
+  --sidebar-border: 220 13% 91%;
+  --sidebar-ring: 217.2 91.2% 59.8%;
+}
+
+.dark {
+  --background: 150 20% 8%;
+  --foreground: 35 25% 97%;
+
+  --card: 150 15% 12%;
+  --card-foreground: 35 25% 97%;
+
+  --popover: 150 15% 12%;
+  --popover-foreground: 35 25% 97%;
+
+  --primary: 145 55% 65%;
+  --primary-foreground: 150 30% 15%;
+
+  --secondary: 150 15% 20%;
+  --secondary-foreground: 35 25% 97%;
+
+  --muted: 150 15% 20%;
+  --muted-foreground: 35 15% 65%;
+
+  --accent: 145 55% 65%;
+  --accent-foreground: 150 30% 15%;
+
+  --destructive: 0 62.8% 50%;
+  --destructive-foreground: 35 25% 97%;
+
+  --border: 150 15% 20%;
+  --input: 150 15% 20%;
+  --ring: 145 55% 65%;
+  
+  --eco-green: 145 55% 65%;
+  --eco-green-light: 145 65% 75%;
+  --eco-green-dark: 145 50% 45%;
+  --eco-beige: 35 25% 25%;
+  --eco-cream: 150 15% 12%;
+  --eco-brown: 30 20% 60%;
+
+  --sidebar-background: 240 5.9% 10%;
+  --sidebar-foreground: 240 4.8% 95.9%;
+  --sidebar-primary: 224.3 76.3% 48%;
+  --sidebar-primary-foreground: 0 0% 100%;
+  --sidebar-accent: 240 3.7% 15.9%;
+  --sidebar-accent-foreground: 240 4.8% 95.9%;
+  --sidebar-border: 240 3.7% 15.9%;
+  --sidebar-ring: 217.2 91.2% 59.8%;
+}
+
+@theme inline {
+  --color-background: hsl(var(--background));
+  --color-foreground: hsl(var(--foreground));
+  --color-border: hsl(var(--border));
+  --color-input: hsl(var(--input));
+  --color-ring: hsl(var(--ring));
+  --color-card: hsl(var(--card));
+  --color-card-foreground: hsl(var(--card-foreground));
+  --color-primary: hsl(var(--primary));
+  --color-primary-foreground: hsl(var(--primary-foreground));
+  --color-secondary: hsl(var(--secondary));
+  --color-secondary-foreground: hsl(var(--secondary-foreground));
+  --color-destructive: hsl(var(--destructive));
+  --color-destructive-foreground: hsl(var(--destructive-foreground));
+  --color-muted: hsl(var(--muted));
+  --color-muted-foreground: hsl(var(--muted-foreground));
+  --color-accent: hsl(var(--accent));
+  --color-accent-foreground: hsl(var(--accent-foreground));
+  --color-popover: hsl(var(--popover));
+  --color-popover-foreground: hsl(var(--popover-foreground));
+  --border-radius: var(--radius);
+  --border-radius-md: calc(var(--radius) - 2px);
+  --border-radius-sm: calc(var(--radius) - 4px);
+  --border-radius-lg: var(--radius);
+}
+
+* {
+  border-color: hsl(var(--border));
+}
+
+body {
+  background: hsl(var(--background));
+  color: hsl(var(--foreground));
+  font-feature-settings: "kern" 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Custom utility classes */
+.eco-gradient {
+  background: var(--gradient-eco);
+}
+
+.earth-gradient {
+  background: var(--gradient-earth);
+}
+
+.hover-lift {
+  transition: var(--transition-smooth);
+}
+
+.hover-lift:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-card);
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+.animate-fade-in-up {
+  animation: fadeInUp 0.8s ease-out forwards;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
