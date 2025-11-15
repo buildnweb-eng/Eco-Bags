@@ -34,35 +34,47 @@ export default function CustomOrders() {
     setIsSubmitting(true);
 
     try {
-      // Simulate form submission
-      await new Promise((resolve) => setTimeout(resolve, 1000));
-
-      toast({
-        title: "Order Request Submitted!",
-        description: "Your custom order details have been sent. We'll contact you shortly.",
+      // Send order email via API
+      const response = await fetch('/api/send-order', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
       });
 
-      // Reset form
-      setFormData({
-        name: "",
-        email: "",
-        phone: "",
-        quantity: "",
-        paperType: "",
-        paperGSM: "",
-        printing: "",
-        handles: "",
-        lamination: "",
-        specialTreatment: "",
-        variety: "",
-        customSize: "",
-        additionalRequirements: "",
-      });
+      const data = await response.json();
+
+      if (response.ok && data.success) {
+        toast({
+          title: "Order Request Submitted!",
+          description: "Your custom order details have been sent via email. We'll contact you shortly.",
+        });
+
+        // Reset form
+        setFormData({
+          name: "",
+          email: "",
+          phone: "",
+          quantity: "",
+          paperType: "",
+          paperGSM: "",
+          printing: "",
+          handles: "",
+          lamination: "",
+          specialTreatment: "",
+          variety: "",
+          customSize: "",
+          additionalRequirements: "",
+        });
+      } else {
+        throw new Error(data.message || 'Failed to send order');
+      }
     } catch (error) {
       console.error('Error submitting order:', error);
       toast({
         title: "Error",
-        description: "Failed to submit order. Please try again.",
+        description: error instanceof Error ? error.message : "Failed to submit order. Please contact us at balamsanjay2003@gmail.com",
         variant: "destructive",
       });
     } finally {
@@ -401,7 +413,7 @@ export default function CustomOrders() {
                 <Button 
                   type="submit" 
                   size="lg" 
-                  className="w-full eco-gradient text-white"
+                  className="w-full eco-gradient text-white cursor-pointer"
                   disabled={isSubmitting}
                 >
                   {isSubmitting ? "Submitting..." : "Submit Custom Order Request"}

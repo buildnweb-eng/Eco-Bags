@@ -28,14 +28,14 @@ const HeroSection = () => {
             </p>
             
             <div className="flex flex-wrap gap-4 pt-4">
-              <Link href="/products">
-                <Button size="lg" className="eco-gradient text-white group">
+              <Link href="/products" className="cursor-pointer">
+                <Button size="lg" className="eco-gradient text-white group cursor-pointer">
                   View Products
-                  <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                  <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform cursor-pointer" />
                 </Button>
               </Link>
-              <Link href="/custom-orders">
-                <Button size="lg" variant="outline">
+              <Link href="/custom-orders" className="cursor-pointer">
+                <Button size="lg" variant="outline" className="cursor-pointer">
                   Custom Orders
                 </Button>
               </Link>

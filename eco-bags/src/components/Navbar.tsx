@@ -26,7 +26,7 @@ const Navbar = () => {
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
-          <Link href="/" className="flex items-center gap-2 group">
+          <Link href="/" className="flex items-center gap-2 group cursor-pointer">
             <div className="p-2 rounded-lg bg-primary/10 group-hover:bg-primary/20 transition-colors">
               <ShoppingBag className="w-6 h-6 text-primary" />
             </div>
@@ -36,7 +36,7 @@ const Navbar = () => {
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center gap-1">
             {navItems.map((item) => (
-              <Link key={item.path} href={item.path}>
+              <Link key={item.path} href={item.path} className="cursor-pointer">
                 <Button
                   variant="ghost"
                   className={`relative ${
@@ -58,7 +58,7 @@ const Navbar = () => {
           <Button
             variant="ghost"
             size="icon"
-            className="md:hidden"
+            className="md:hidden cursor-pointer"
             onClick={() => setIsOpen(!isOpen)}
           >
             {isOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
@@ -74,6 +74,7 @@ const Navbar = () => {
                   key={item.path}
                   href={item.path}
                   onClick={() => setIsOpen(false)}
+                  className="cursor-pointer"
                 >
                   <Button
                     variant="ghost"
