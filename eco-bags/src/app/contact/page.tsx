@@ -38,22 +38,22 @@ export default function Contact() {
     {
       icon: Phone,
       title: "Phone",
-      details: ["+1 (555) 123-4567", "+1 (555) 987-6543"],
+      details: ["+91 9949826222"],
     },
     {
       icon: Mail,
       title: "Email",
-      details: ["info@ecobags.com", "support@ecobags.com"],
+      details: ["eco4bags@gmail.com"],
     },
     {
       icon: MapPin,
       title: "Address",
-      details: ["123 Eco Street", "Green City, GC 12345"],
+      details: ["Plot No. 91, Rajiv Gandhi Nagar", "Prashanthi Nagar, Kukatpally", "Hyderabad - 500072"],
     },
     {
       icon: Clock,
       title: "Business Hours",
-      details: ["Monday - Friday: 9AM - 6PM", "Saturday: 10AM - 4PM"],
+      details: ["Monday - Saturday: 9AM - 7PM", "Sunday: Closed"],
     },
   ];
 
@@ -193,13 +193,17 @@ export default function Contact() {
 
         {/* Map Section */}
         <Card className="overflow-hidden border-border/50">
-          <div className="h-96 bg-secondary/30 flex items-center justify-center">
-            <div className="text-center">
-              <MapPin className="w-12 h-12 text-primary mx-auto mb-4" />
-              <p className="text-muted-foreground">
-                Interactive map would be displayed here
-              </p>
-            </div>
+          <div className="h-96 relative">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7611.089250388509!2d78.42135144047862!3d17.481496417037448!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb90a6ee74b3a7%3A0x2b6a52e835fab135!2sEco%20Bag%20Factory!5e0!3m2!1sen!2sin!4v1763202437596!5m2!1sen!2sin"
+              width="100%"
+              height="100%"
+              style={{ border: 0 }}
+              allowFullScreen
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+              title="ECO BAG FACTORY Location"
+            />
           </div>
         </Card>
       </div>

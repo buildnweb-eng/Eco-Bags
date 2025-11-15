@@ -79,15 +79,15 @@ const Footer = () => {
             <ul className="space-y-3">
               <li className="flex items-start gap-2 text-sm text-muted-foreground">
                 <MapPin className="w-4 h-4 mt-0.5 text-primary flex-shrink-0" />
-                <span>123 Eco Street, Green City</span>
+                <span>Plot No. 91, Rajiv Gandhi Nagar, Prashanthi Nagar, Kukatpally, Hyderabad - 500072</span>
               </li>
               <li className="flex items-center gap-2 text-sm text-muted-foreground">
                 <Phone className="w-4 h-4 text-primary flex-shrink-0" />
-                <span>+1 (555) 123-4567</span>
+                <span>+91 9949826222</span>
               </li>
               <li className="flex items-center gap-2 text-sm text-muted-foreground">
                 <Mail className="w-4 h-4 text-primary flex-shrink-0" />
-                <span>info@ecobags.com</span>
+                <span>eco4bags@gmail.com</span>
               </li>
             </ul>
           </div>
