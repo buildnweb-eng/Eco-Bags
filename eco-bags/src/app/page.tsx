@@ -129,7 +129,7 @@ export default function Home() {
                 Join thousands of businesses making the switch to sustainable packaging
               </p>
               <Link href="/contact">
-                <Button size="lg" variant="secondary" className="bg-white text-primary hover:bg-white/90">
+                <Button size="lg" variant="secondary" className="bg-white text-primary hover:bg-white/90 cursor-pointer">
                   Get Started Today
                 </Button>
               </Link>

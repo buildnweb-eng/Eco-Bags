@@ -41,8 +41,8 @@ const Navbar = () => {
                   variant="ghost"
                   className={`relative ${
                     isActive(item.path)
-                      ? "text-primary font-medium"
-                      : "text-foreground hover:text-primary"
+                      ? "text-primary font-medium cursor-pointer"
+                      : "text-foreground hover:text-primary cursor-pointer"
                   }`}
                 >
                   {item.name}
