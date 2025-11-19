@@ -12,7 +12,7 @@ const Footer = () => {
               <div className="p-2 rounded-lg bg-primary/10">
                 <ShoppingBag className="w-6 h-6 text-primary" />
               </div>
-              <span className="text-2xl font-bold text-primary">EcoBags</span>
+              <span className="text-2xl font-bold text-primary">EcoBagsFactory</span>
             </div>
             <p className="text-sm text-muted-foreground">
               Eco-friendly Paper Bags for a Greener Tomorrow

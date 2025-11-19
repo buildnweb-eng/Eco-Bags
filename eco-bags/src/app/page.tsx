@@ -4,6 +4,18 @@ import { Leaf, Recycle, Package, Heart } from "lucide-react";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "EcoBagsFactory - Eco-friendly Paper Bags Manufacturer in Hyderabad",
+  description: "Leading manufacturer of 100% recyclable and biodegradable paper bags in Hyderabad. Custom printed bags, kraft bags, gift bags, and shopping bags. Sustainable packaging solutions for your business.",
+  keywords: ["eco-friendly paper bags", "paper bags manufacturer Hyderabad", "sustainable packaging", "custom printed bags", "kraft paper bags", "recyclable bags", "biodegradable bags", "paper bags India"],
+  openGraph: {
+    title: "EcoBagsFactory - Eco-friendly Paper Bags Manufacturer",
+    description: "100% recyclable and biodegradable paper bags. Custom designs, premium quality. Leading manufacturer in Hyderabad.",
+    images: ["/hero-bags.jpg"],
+  },
+};
 
 export default function Home() {
   const features = [
@@ -30,9 +42,9 @@ export default function Home() {
   ];
 
   const products = [
-    { id: 1, name: "Classic Kraft Bags", image: "/product-1.jpg" },
-    { id: 2, name: "Premium White Bags", image: "/product-2.jpg" },
-    { id: 3, name: "Custom Printed Bags", image: "/product-3.jpg" },
+    { id: 1, name: "Classic Kraft Bags", image: "/product-1.jpg", alt: "Classic eco-friendly kraft paper bags for retail and shopping - 100% recyclable" },
+    { id: 2, name: "Premium White Bags", image: "/product-2.jpg", alt: "Premium white paper bags for boutiques and gift shops - sustainable packaging" },
+    { id: 3, name: "Custom Printed Bags", image: "/product-3.jpg", alt: "Custom printed paper bags with brand logo - personalized eco-friendly packaging" },
   ];
 
   const varieties = [
@@ -43,6 +55,7 @@ export default function Home() {
       color: "Two Colour",
       handles: "Thread Handles",
       paper: "Brown 140 GSM",
+      alt: "9x8x8 inch eco-friendly paper bag with thread handles - Brown 140 GSM kraft paper",
     },
     {
       id: 2,
@@ -51,6 +64,7 @@ export default function Home() {
       color: "Multi Colour",
       handles: "Thread Handles",
       paper: "Spot UV Coating",
+      alt: "12x8x3.5 inch custom printed paper bag with Spot UV coating and thread handles",
     },
     {
       id: 3,
@@ -59,6 +73,7 @@ export default function Home() {
       color: "Multi Colour",
       handles: "Thread Handles",
       paper: "Cyber XL 220 GSM Gloss Lamination",
+      alt: "6x6x4 inch premium paper bag with gloss lamination - Cyber XL 220 GSM",
     },
     {
       id: 4,
@@ -67,6 +82,7 @@ export default function Home() {
       color: "Multi Colour",
       handles: "Special Handles",
       paper: "Cyber XL 250 GSM Matt Lamination",
+      alt: "14x10x4 inch luxury paper bag with matt lamination and special handles",
     },
     {
       id: 5,
@@ -75,6 +91,7 @@ export default function Home() {
       color: "Multi Colour",
       handles: "Satin Ribbon",
       paper: "Cyber XL 270 GSM",
+      alt: "15x12x4 inch premium gift bag with satin ribbon handles - Cyber XL 270 GSM",
     },
     {
       id: 6,
@@ -83,6 +100,7 @@ export default function Home() {
       color: "Multi Colour",
       handles: "Thread Handles",
       paper: "Cyber XL 300 GSM Gold Foiling",
+      alt: "17x12x5 inch luxury paper bag with gold foiling - Cyber XL 300 GSM",
     },
     {
       id: 7,
@@ -91,6 +109,7 @@ export default function Home() {
       color: "Multi Colour",
       handles: "Paper Handles",
       paper: "Viva Linear 160 GSM",
+      alt: "15.25x18.65x4 inch eco-friendly shopping bag with paper handles - Viva Linear 160 GSM",
     },
     {
       id: 8,
@@ -99,6 +118,7 @@ export default function Home() {
       color: "Two Colour",
       handles: "Paper Handles",
       paper: "White 160 GSM",
+      alt: "12x16x4 inch white paper bag with paper handles - 160 GSM sustainable packaging",
     },
   ];
 
@@ -162,7 +182,7 @@ export default function Home() {
                 <div className="relative h-64 overflow-hidden bg-secondary/30">
                   <Image
                     src={variety.image}
-                    alt={`Paper bag variety ${variety.id}`}
+                    alt={variety.alt}
                     width={400}
                     height={400}
                     className="w-full h-full object-contain p-4 group-hover:scale-105 transition-transform duration-300"
@@ -229,7 +249,7 @@ export default function Home() {
               <Card key={product.id} className="hover-lift overflow-hidden border-border/50">
                 <Image
                   src={product.image}
-                  alt={product.name}
+                  alt={product.alt}
                   width={400}
                   height={300}
                   className="w-full h-64 object-cover"
@@ -257,7 +277,7 @@ export default function Home() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 earth-gradient">
+      <section className="py-20 bg-background">
         <div className="container mx-auto px-4">
           <Card className="eco-gradient border-0 overflow-hidden">
             <CardContent className="p-12 text-center text-white">

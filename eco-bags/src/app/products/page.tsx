@@ -3,6 +3,18 @@ import { Button } from "@/components/ui/button";
 import { ShoppingBag, Check } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Products - Eco-friendly Paper Bags Collection",
+  description: "Explore our range of sustainable paper bags: Classic Kraft Bags, Premium White Bags, and Custom Printed Bags. All sizes available. 100% recyclable and biodegradable.",
+  keywords: ["kraft paper bags", "custom printed bags", "white paper bags", "shopping bags", "gift bags", "recyclable paper bags", "paper bags wholesale"],
+  openGraph: {
+    title: "EcoBagsFactory Products - Sustainable Paper Bags",
+    description: "High-quality eco-friendly paper bags in various sizes and designs. Custom printing available.",
+    images: ["/product-1.jpg"],
+  },
+};
 
 export default function Products() {
   const products = [
@@ -10,6 +22,7 @@ export default function Products() {
       id: 1,
       name: "Classic Kraft Bags",
       image: "/product-1.jpg",
+      alt: "Durable eco-friendly kraft paper bags with twisted handles - recyclable and biodegradable",
       description: "Durable and eco-friendly kraft paper bags perfect for retail",
       sizes: ["Small", "Medium", "Large", "Extra Large"],
       features: ["Twisted paper handles", "100% recyclable", "Biodegradable"],
@@ -18,6 +31,7 @@ export default function Products() {
       id: 2,
       name: "Premium White Bags",
       image: "/product-2.jpg",
+      alt: "Elegant premium white paper bags with reinforced handles - ideal for boutiques and gift shops",
       description: "Elegant white paper bags ideal for boutiques and gift shops",
       sizes: ["Small", "Medium", "Large"],
       features: ["Reinforced handles", "Premium finish", "Customizable"],
@@ -26,6 +40,7 @@ export default function Products() {
       id: 3,
       name: "Custom Printed Bags",
       image: "/product-3.jpg",
+      alt: "Custom printed paper bags with full color brand logo and personalized design",
       description: "Personalized bags with your brand logo and design",
       sizes: ["All sizes available"],
       features: ["Full color printing", "Brand customization", "Bulk discounts"],
@@ -57,7 +72,7 @@ export default function Products() {
               <div className="relative h-80 overflow-hidden">
                 <Image
                   src={product.image}
-                  alt={product.name}
+                  alt={product.alt}
                   width={400}
                   height={320}
                   className="w-full h-full object-cover transition-transform duration-500 hover:scale-110"

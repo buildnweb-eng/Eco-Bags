@@ -1,14 +1,26 @@
 import { Card } from "@/components/ui/card";
 import Image from "next/image";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Gallery - EcoBagsFactory Product Showcase",
+  description: "Browse our gallery of eco-friendly paper bags. See our diverse collection of sustainable packaging solutions, custom designs, and premium quality products.",
+  keywords: ["paper bags gallery", "eco-friendly packaging showcase", "custom bag designs", "sustainable products", "paper bags portfolio"],
+  openGraph: {
+    title: "EcoBagsFactory Gallery - Eco-friendly Paper Bags",
+    description: "Browse our stunning collection of sustainable paper bags and custom designs.",
+    images: ["/product-1.jpg"],
+  },
+};
 
 export default function Gallery() {
   const galleryItems = [
-    { id: 1, image: "/product-1.jpg", title: "Classic Kraft Collection" },
-    { id: 2, image: "/product-2.jpg", title: "Premium White Series" },
-    { id: 3, image: "/product-3.jpg", title: "Custom Designs" },
-    { id: 4, image: "/about-image.jpg", title: "Craftsmanship" },
-    { id: 5, image: "/hero-bags.jpg", title: "Product Range" },
-    { id: 6, image: "/product-1.jpg", title: "Retail Solutions" },
+    { id: 1, image: "/product-1.jpg", title: "Classic Kraft Collection", alt: "Classic kraft paper bags collection - sustainable retail packaging solutions" },
+    { id: 2, image: "/product-2.jpg", title: "Premium White Series", alt: "Premium white paper bags series - elegant packaging for boutiques" },
+    { id: 3, image: "/product-3.jpg", title: "Custom Designs", alt: "Custom designed paper bags with brand printing and personalization" },
+    { id: 4, image: "/about-image.jpg", title: "Craftsmanship", alt: "EcoBagsFactory craftsmanship and quality manufacturing process" },
+    { id: 5, image: "/hero-bags.jpg", title: "Product Range", alt: "Complete range of eco-friendly paper bags - shopping, gift, and grocery bags" },
+    { id: 6, image: "/product-1.jpg", title: "Retail Solutions", alt: "Sustainable retail packaging solutions - eco-friendly paper bags for businesses" },
   ];
 
   return (
@@ -36,7 +48,7 @@ export default function Gallery() {
               <div className="relative h-80 overflow-hidden">
                 <Image
                   src={item.image}
-                  alt={item.title}
+                  alt={item.alt}
                   width={400}
                   height={320}
                   className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"

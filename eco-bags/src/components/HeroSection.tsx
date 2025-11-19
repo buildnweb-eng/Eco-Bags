@@ -46,7 +46,7 @@ const HeroSection = () => {
             <div className="absolute inset-0 bg-primary/20 rounded-3xl blur-3xl" />
             <Image
               src="/hero-bags.jpg"
-              alt="Eco-friendly paper bags"
+              alt="EcoBagsFactory eco-friendly paper bags collection - 100% recyclable and biodegradable sustainable packaging"
               width={800}
               height={600}
               className="relative rounded-3xl shadow-2xl w-full h-auto"

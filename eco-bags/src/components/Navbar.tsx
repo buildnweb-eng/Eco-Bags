@@ -30,7 +30,10 @@ const Navbar = () => {
             <div className="p-2 rounded-lg bg-primary/10 group-hover:bg-primary/20 transition-colors">
               <ShoppingBag className="w-6 h-6 text-primary" />
             </div>
-            <span className="text-2xl font-bold text-primary">EcoBags</span>
+            <span className="text-2xl font-bold">
+              <span className="text-primary">EcoBags</span>
+              <span className="text-foreground">Factory</span>
+            </span>
           </Link>
 
           {/* Desktop Navigation */}

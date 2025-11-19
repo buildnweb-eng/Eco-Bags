@@ -1,6 +1,18 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Leaf, Users, Award, Target } from "lucide-react";
 import Image from "next/image";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "About Us - Leading Eco-friendly Paper Bags Manufacturer",
+  description: "Learn about EcoBagsFactory's commitment to sustainability. 10M+ bags produced, 5000+ happy clients. Leading manufacturer of eco-friendly paper bags in Hyderabad since inception.",
+  keywords: ["about EcoBagsFactory", "sustainable packaging company", "eco-friendly manufacturer", "paper bags company Hyderabad", "green packaging solutions"],
+  openGraph: {
+    title: "About EcoBagsFactory - Our Sustainable Mission",
+    description: "10M+ bags produced, 5000+ happy clients. Leading the way in sustainable packaging solutions in Hyderabad.",
+    images: ["/about-image.jpg"],
+  },
+};
 
 export default function About() {
   const values = [
@@ -63,7 +75,7 @@ export default function About() {
             <div className="absolute inset-0 bg-primary/20 rounded-3xl blur-3xl" />
             <Image
               src="/about-image.jpg"
-              alt="EcoBags craftsmanship"
+              alt="EcoBagsFactory manufacturing process - eco-friendly paper bags production and craftsmanship"
               width={600}
               height={400}
               className="relative rounded-3xl shadow-2xl w-full"
