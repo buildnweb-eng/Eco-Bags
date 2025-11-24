@@ -14,11 +14,11 @@ const inter = Inter({
 export const metadata: Metadata = {
   metadataBase: new URL('https://ecobagsfactory.org'),
   title: {
-    default: "EcoBagsFactory - Eco-friendly Paper Bags Manufacturer in Hyderabad",
+    default: "EcoBagsFactory | Eco Bag Factory - Paper Bags Manufacturer Hyderabad",
     template: "%s | EcoBagsFactory"
   },
-  description: "Leading manufacturer of eco-friendly paper bags in Hyderabad. 100% recyclable, biodegradable, and customizable paper bags for businesses. Sustainable packaging solutions with custom printing options.",
-  keywords: ["eco-friendly paper bags", "paper bags manufacturer", "sustainable packaging", "recyclable bags", "biodegradable bags", "custom paper bags", "paper bags Hyderabad", "eco bags factory", "kraft paper bags", "printed paper bags", "shopping bags", "gift bags", "grocery bags"],
+  description: "EcoBagsFactory (Eco Bag Factory) - Leading manufacturer of eco-friendly paper bags in Hyderabad. 100% recyclable, biodegradable, and customizable paper bags for businesses. Sustainable packaging solutions with custom printing options.",
+  keywords: ["EcoBagsFactory", "Eco Bag Factory", "eco-friendly paper bags", "paper bags manufacturer", "sustainable packaging", "recyclable bags", "biodegradable bags", "custom paper bags", "paper bags Hyderabad", "eco bags factory", "kraft paper bags", "printed paper bags", "shopping bags", "gift bags", "grocery bags"],
   authors: [{ name: "EcoBagsFactory" }],
   creator: "EcoBagsFactory",
   publisher: "EcoBagsFactory",
@@ -74,7 +74,7 @@ export default function RootLayout({
     "@context": "https://schema.org",
     "@type": "Organization",
     "name": "EcoBagsFactory",
-    "alternateName": "EcoBags Factory",
+    "alternateName": ["Eco Bag Factory", "EcoBags Factory", "Eco Bags Factory"],
     "url": "https://ecobagsfactory.org",
     "logo": "https://ecobagsfactory.org/hero-bags.jpg",
     "description": "Leading manufacturer of eco-friendly, recyclable paper bags in Hyderabad. Sustainable packaging solutions for businesses.",

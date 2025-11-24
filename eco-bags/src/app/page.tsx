@@ -7,9 +7,9 @@ import Image from "next/image";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "EcoBagsFactory - Eco-friendly Paper Bags Manufacturer in Hyderabad",
-  description: "Leading manufacturer of 100% recyclable and biodegradable paper bags in Hyderabad. Custom printed bags, kraft bags, gift bags, and shopping bags. Sustainable packaging solutions for your business.",
-  keywords: ["eco-friendly paper bags", "paper bags manufacturer Hyderabad", "sustainable packaging", "custom printed bags", "kraft paper bags", "recyclable bags", "biodegradable bags", "paper bags India"],
+  title: "EcoBagsFactory | Eco Bag Factory - Paper Bags Manufacturer Hyderabad",
+  description: "EcoBagsFactory (Eco Bag Factory) - Leading manufacturer of 100% recyclable and biodegradable paper bags in Hyderabad. Custom printed bags, kraft bags, gift bags, and shopping bags. Sustainable packaging solutions for your business.",
+  keywords: ["EcoBagsFactory", "Eco Bag Factory", "eco-friendly paper bags", "paper bags manufacturer Hyderabad", "sustainable packaging", "custom printed bags", "kraft paper bags", "recyclable bags", "biodegradable bags", "paper bags India"],
   openGraph: {
     title: "EcoBagsFactory - Eco-friendly Paper Bags Manufacturer",
     description: "100% recyclable and biodegradable paper bags. Custom designs, premium quality. Leading manufacturer in Hyderabad.",
