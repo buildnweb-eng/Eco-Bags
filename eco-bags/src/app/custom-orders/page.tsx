@@ -111,7 +111,7 @@ export default function CustomOrders() {
         {/* Header */}
         <div className="max-w-4xl mx-auto text-center mb-16 animate-fade-in-up">
           <h1 className="text-5xl md:text-6xl font-bold text-foreground mb-6">
-            Custom <span className="text-primary">Orders</span>
+            Custom Printed <span className="text-primary">Eco Bags</span> Hyderabad
           </h1>
           <p className="text-xl text-muted-foreground">
             Create unique paper bags that perfectly represent your brand

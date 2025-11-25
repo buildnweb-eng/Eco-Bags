@@ -18,6 +18,105 @@ export const metadata: Metadata = {
 };
 
 export default function Home() {
+  // Product List Schema for varieties
+  const productListSchema = {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    "name": "EcoBagsFactory Paper Bags Collection",
+    "description": "Premium eco-friendly paper bags in various sizes and finishes",
+    "numberOfItems": 8,
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "item": {
+          "@type": "Product",
+          "name": "Brown Kraft Paper Bag 9x8x8 inch",
+          "description": "Eco-friendly paper bag with thread handles - Brown 140 GSM kraft paper",
+          "brand": { "@type": "Brand", "name": "EcoBagsFactory" },
+          "offers": { "@type": "Offer", "priceCurrency": "INR", "availability": "https://schema.org/InStock" }
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "item": {
+          "@type": "Product",
+          "name": "Spot UV Paper Bag 12x8x3.5 inch",
+          "description": "Custom printed paper bag with Spot UV coating and thread handles",
+          "brand": { "@type": "Brand", "name": "EcoBagsFactory" },
+          "offers": { "@type": "Offer", "priceCurrency": "INR", "availability": "https://schema.org/InStock" }
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "item": {
+          "@type": "Product",
+          "name": "Gloss Lamination Paper Bag 6x6x4 inch",
+          "description": "Premium paper bag with gloss lamination - Cyber XL 220 GSM",
+          "brand": { "@type": "Brand", "name": "EcoBagsFactory" },
+          "offers": { "@type": "Offer", "priceCurrency": "INR", "availability": "https://schema.org/InStock" }
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 4,
+        "item": {
+          "@type": "Product",
+          "name": "Matt Lamination Paper Bag 14x10x4 inch",
+          "description": "Luxury paper bag with matt lamination and special handles - 250 GSM",
+          "brand": { "@type": "Brand", "name": "EcoBagsFactory" },
+          "offers": { "@type": "Offer", "priceCurrency": "INR", "availability": "https://schema.org/InStock" }
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 5,
+        "item": {
+          "@type": "Product",
+          "name": "Satin Ribbon Gift Bag 15x12x4 inch",
+          "description": "Premium gift bag with satin ribbon handles - Cyber XL 270 GSM",
+          "brand": { "@type": "Brand", "name": "EcoBagsFactory" },
+          "offers": { "@type": "Offer", "priceCurrency": "INR", "availability": "https://schema.org/InStock" }
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 6,
+        "item": {
+          "@type": "Product",
+          "name": "Gold Foiling Luxury Bag 17x12x5 inch",
+          "description": "Luxury paper bag with gold foiling - Cyber XL 300 GSM",
+          "brand": { "@type": "Brand", "name": "EcoBagsFactory" },
+          "offers": { "@type": "Offer", "priceCurrency": "INR", "availability": "https://schema.org/InStock" }
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 7,
+        "item": {
+          "@type": "Product",
+          "name": "Shopping Bag 15.25x18.65x4 inch",
+          "description": "Eco-friendly shopping bag with paper handles - Viva Linear 160 GSM",
+          "brand": { "@type": "Brand", "name": "EcoBagsFactory" },
+          "offers": { "@type": "Offer", "priceCurrency": "INR", "availability": "https://schema.org/InStock" }
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 8,
+        "item": {
+          "@type": "Product",
+          "name": "White Paper Bag 12x16x4 inch",
+          "description": "White paper bag with paper handles - 160 GSM sustainable packaging",
+          "brand": { "@type": "Brand", "name": "EcoBagsFactory" },
+          "offers": { "@type": "Offer", "priceCurrency": "INR", "availability": "https://schema.org/InStock" }
+        }
+      }
+    ]
+  };
+
   const features = [
     {
       icon: Leaf,
@@ -124,6 +223,11 @@ export default function Home() {
 
   return (
     <div className="pt-20">
+      {/* Product List Schema for SEO */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(productListSchema) }}
+      />
       <HeroSection />
 
       {/* Features Section */}

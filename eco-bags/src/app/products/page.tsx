@@ -53,7 +53,7 @@ export default function Products() {
         {/* Header */}
         <div className="max-w-4xl mx-auto text-center mb-16 animate-fade-in-up">
           <h1 className="text-5xl md:text-6xl font-bold text-foreground mb-6">
-            Our <span className="text-primary">Products</span>
+            Eco Bags <span className="text-primary">Hyderabad</span> Collection
           </h1>
           <p className="text-xl text-muted-foreground">
             Discover our range of sustainable, high-quality paper bags designed 
