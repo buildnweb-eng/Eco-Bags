@@ -5,7 +5,7 @@ const Footer = () => {
   return (
     <footer className="bg-secondary/30 border-t border-border mt-20">
       <div className="container mx-auto px-4 py-12">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8">
           {/* Brand Section */}
           <div className="space-y-4">
             <div className="flex items-center gap-2">
@@ -59,17 +59,156 @@ const Footer = () => {
                   Gallery
                 </Link>
               </li>
+              <li>
+                <Link
+                  href="/faq"
+                  className="text-sm text-muted-foreground hover:text-primary transition-colors"
+                >
+                  FAQ
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/blog"
+                  className="text-sm text-muted-foreground hover:text-primary transition-colors"
+                >
+                  Blog
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/contact"
+                  className="text-sm text-muted-foreground hover:text-primary transition-colors"
+                >
+                  Contact
+                </Link>
+              </li>
             </ul>
           </div>
 
           {/* Products */}
           <div>
-            <h3 className="font-semibold mb-4 text-foreground">Products</h3>
+            <h3 className="font-semibold mb-4 text-foreground">Our Products</h3>
             <ul className="space-y-2">
-              <li className="text-sm text-muted-foreground">Shopping Bags</li>
-              <li className="text-sm text-muted-foreground">Grocery Bags</li>
-              <li className="text-sm text-muted-foreground">Gift Bags</li>
-              <li className="text-sm text-muted-foreground">Custom Printed</li>
+              <li>
+                <Link
+                  href="/kraft-paper-bags"
+                  className="text-sm text-muted-foreground hover:text-primary transition-colors"
+                >
+                  Kraft Paper Bags
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/white-paper-bags"
+                  className="text-sm text-muted-foreground hover:text-primary transition-colors"
+                >
+                  White Paper Bags
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/custom-printed-bags"
+                  className="text-sm text-muted-foreground hover:text-primary transition-colors"
+                >
+                  Custom Printed Bags
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/gift-bags-hyderabad"
+                  className="text-sm text-muted-foreground hover:text-primary transition-colors"
+                >
+                  Gift Bags
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/shopping-bags-wholesale"
+                  className="text-sm text-muted-foreground hover:text-primary transition-colors"
+                >
+                  Wholesale Bags
+                </Link>
+              </li>
+            </ul>
+          </div>
+
+          {/* Locations */}
+          <div>
+            <h3 className="font-semibold mb-4 text-foreground">Service Areas</h3>
+            <ul className="space-y-2">
+              <li>
+                <Link
+                  href="/eco-bags-hyderabad"
+                  className="text-sm text-muted-foreground hover:text-primary transition-colors"
+                >
+                  Hyderabad
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/paper-bags-kukatpally"
+                  className="text-sm text-muted-foreground hover:text-primary transition-colors"
+                >
+                  Kukatpally
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/eco-bags-secunderabad"
+                  className="text-sm text-muted-foreground hover:text-primary transition-colors"
+                >
+                  Secunderabad
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/paper-bags-banjara-hills"
+                  className="text-sm text-muted-foreground hover:text-primary transition-colors"
+                >
+                  Banjara Hills
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/eco-bags-madhapur"
+                  className="text-sm text-muted-foreground hover:text-primary transition-colors"
+                >
+                  Madhapur
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/paper-bags-gachibowli"
+                  className="text-sm text-muted-foreground hover:text-primary transition-colors"
+                >
+                  Gachibowli
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/eco-bags-jubilee-hills"
+                  className="text-sm text-muted-foreground hover:text-primary transition-colors"
+                >
+                  Jubilee Hills
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/paper-bags-kondapur"
+                  className="text-sm text-muted-foreground hover:text-primary transition-colors"
+                >
+                  Kondapur
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/eco-bags-ameerpet"
+                  className="text-sm text-muted-foreground hover:text-primary transition-colors"
+                >
+                  Ameerpet
+                </Link>
+              </li>
             </ul>
           </div>
 
@@ -78,15 +217,15 @@ const Footer = () => {
             <h3 className="font-semibold mb-4 text-foreground">Contact Us</h3>
             <ul className="space-y-3">
               <li className="flex items-start gap-2 text-sm text-muted-foreground">
-                <MapPin className="w-4 h-4 mt-0.5 text-primary flex-shrink-0" />
-                <span>Plot No. 91, Rajiv Gandhi Nagar, Prashanthi Nagar, Kukatpally, Hyderabad - 500072</span>
+                <MapPin className="w-4 h-4 mt-0.5 text-primary shrink-0" />
+                <span>Plot No. 91, Rajiv Gandhi Nagar, Kukatpally, Hyderabad - 500072</span>
               </li>
               <li className="flex items-center gap-2 text-sm text-muted-foreground">
-                <Phone className="w-4 h-4 text-primary flex-shrink-0" />
+                <Phone className="w-4 h-4 text-primary shrink-0" />
                 <span>+91 9949826222</span>
               </li>
               <li className="flex items-center gap-2 text-sm text-muted-foreground">
-                <Mail className="w-4 h-4 text-primary flex-shrink-0" />
+                <Mail className="w-4 h-4 text-primary shrink-0" />
                 <span>eco4bags@gmail.com</span>
               </li>
             </ul>
