@@ -7,12 +7,12 @@ import Image from "next/image";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "EcoBagsFactory | Eco Bag Factory - Paper Bags Manufacturer Hyderabad",
-  description: "EcoBagsFactory (Eco Bag Factory) - Leading manufacturer of 100% recyclable and biodegradable paper bags in Hyderabad. Custom printed bags, kraft bags, gift bags, and shopping bags. Sustainable packaging solutions for your business.",
-  keywords: ["EcoBagsFactory", "Eco Bag Factory", "eco-friendly paper bags", "paper bags manufacturer Hyderabad", "sustainable packaging", "custom printed bags", "kraft paper bags", "recyclable bags", "biodegradable bags", "paper bags India"],
+  title: "EcoBagsFactory | ecobags | paperbags - Buy Premium Paper Bags Online India",
+  description: "EcoBagsFactory - Buy ecobags and paperbags online. India's #1 ecobags manufacturer and paperbags supplier. Premium quality ecobags, custom printed paperbags, kraft paper bags at wholesale prices. 100% recyclable ecobags, biodegradable paperbags. Order ecobags online, bulk paperbags. EcoBagsFactory delivers ecobags and paperbags across India.",
+  keywords: ["EcoBagsFactory", "ecobags", "paperbags", "EcoBags Factory", "ecobags India", "paperbags India", "ecobags manufacturer", "paperbags manufacturer", "ecobags online", "paperbags online", "buy ecobags", "buy paperbags", "ecobags wholesale", "paperbags wholesale", "ecobags bulk", "paperbags bulk", "custom ecobags", "printed paperbags", "kraft paperbags", "ecobags Hyderabad", "paperbags Hyderabad", "ecobags supplier", "paperbags supplier", "cheap ecobags", "cheap paperbags", "ecobags price", "paperbags price", "shopping bags", "gift bags", "grocery bags", "retail bags", "carry bags", "recyclable bags", "biodegradable bags", "eco friendly bags", "sustainable packaging"],
   openGraph: {
-    title: "EcoBagsFactory - Eco-friendly Paper Bags Manufacturer",
-    description: "100% recyclable and biodegradable paper bags. Custom designs, premium quality. Leading manufacturer in Hyderabad.",
+    title: "EcoBagsFactory | ecobags | paperbags - Premium Manufacturer India",
+    description: "EcoBagsFactory - Buy ecobags and paperbags online. Premium quality ecobags at wholesale prices. Custom printed paperbags. 100% recyclable ecobags and biodegradable paperbags.",
     images: ["/hero-bags.jpg"],
   },
 };
@@ -22,8 +22,8 @@ export default function Home() {
   const productListSchema = {
     "@context": "https://schema.org",
     "@type": "ItemList",
-    "name": "EcoBagsFactory Paper Bags Collection",
-    "description": "Premium eco-friendly paper bags in various sizes and finishes",
+    "name": "EcoBagsFactory ecobags and paperbags Collection",
+    "description": "EcoBagsFactory premium ecobags and paperbags - buy ecobags online, wholesale paperbags, custom printed ecobags, kraft paperbags, gift bags, shopping bags in various sizes",
     "numberOfItems": 8,
     "itemListElement": [
       {
@@ -31,8 +31,8 @@ export default function Home() {
         "position": 1,
         "item": {
           "@type": "Product",
-          "name": "Brown Kraft Paper Bag 9x8x8 inch",
-          "description": "Eco-friendly paper bag with thread handles - Brown 140 GSM kraft paper",
+          "name": "Brown Kraft paperbags - EcoBagsFactory ecobags 9x8x8 inch",
+          "description": "EcoBagsFactory ecobags - Brown kraft paperbags with thread handles - 140 GSM - Premium quality ecobags and paperbags for retail and shopping",
           "brand": { "@type": "Brand", "name": "EcoBagsFactory" },
           "offers": { "@type": "Offer", "priceCurrency": "INR", "availability": "https://schema.org/InStock" }
         }
@@ -42,8 +42,8 @@ export default function Home() {
         "position": 2,
         "item": {
           "@type": "Product",
-          "name": "Spot UV Paper Bag 12x8x3.5 inch",
-          "description": "Custom printed paper bag with Spot UV coating and thread handles",
+          "name": "Custom Printed paperbags - EcoBagsFactory ecobags 12x8x3.5 inch",
+          "description": "EcoBagsFactory custom printed ecobags and paperbags with Spot UV coating - Personalized paperbags for branding - Premium ecobags manufacturer",
           "brand": { "@type": "Brand", "name": "EcoBagsFactory" },
           "offers": { "@type": "Offer", "priceCurrency": "INR", "availability": "https://schema.org/InStock" }
         }
@@ -108,8 +108,8 @@ export default function Home() {
         "position": 8,
         "item": {
           "@type": "Product",
-          "name": "White Paper Bag 12x16x4 inch",
-          "description": "White paper bag with paper handles - 160 GSM sustainable packaging",
+          "name": "White paperbags - EcoBagsFactory ecobags 12x16x4 inch",
+          "description": "EcoBagsFactory premium white paperbags - ecobags with paper handles - 160 GSM sustainable packaging - Best paperbags and ecobags for retail",
           "brand": { "@type": "Brand", "name": "EcoBagsFactory" },
           "offers": { "@type": "Offer", "priceCurrency": "INR", "availability": "https://schema.org/InStock" }
         }
@@ -141,9 +141,9 @@ export default function Home() {
   ];
 
   const products = [
-    { id: 1, name: "Classic Kraft Bags", image: "/product-1.jpg", alt: "Classic eco-friendly kraft paper bags for retail and shopping - 100% recyclable" },
-    { id: 2, name: "Premium White Bags", image: "/product-2.jpg", alt: "Premium white paper bags for boutiques and gift shops - sustainable packaging" },
-    { id: 3, name: "Custom Printed Bags", image: "/product-3.jpg", alt: "Custom printed paper bags with brand logo - personalized eco-friendly packaging" },
+    { id: 1, name: "Classic Kraft Bags", image: "/product-1.jpg", alt: "Classic eco-friendly kraft paper bags for retail and shopping - 100% recyclable ecobags paperbags" },
+    { id: 2, name: "Premium White Bags", image: "/product-2.jpg", alt: "Premium white paper bags eco bags for boutiques and gift shops - sustainable packaging paperbags" },
+    { id: 3, name: "Custom Printed Bags", image: "/product-3.jpg", alt: "Custom printed paper bags ecobags with brand logo - personalized eco-friendly packaging paperbags" },
   ];
 
   const varieties = [
@@ -154,7 +154,7 @@ export default function Home() {
       color: "Two Colour",
       handles: "Thread Handles",
       paper: "Brown 140 GSM",
-      alt: "9x8x8 inch eco-friendly paper bag with thread handles - Brown 140 GSM kraft paper",
+      alt: "9x8x8 inch eco-friendly paper bags ecobags kraft paperbags with thread handles - Brown 140 GSM eco bags manufacturer",
     },
     {
       id: 2,
@@ -163,7 +163,7 @@ export default function Home() {
       color: "Multi Colour",
       handles: "Thread Handles",
       paper: "Spot UV Coating",
-      alt: "12x8x3.5 inch custom printed paper bag with Spot UV coating and thread handles",
+      alt: "12x8x3.5 inch custom printed paper bags ecobags with Spot UV coating - personalized paperbags eco bags India",
     },
     {
       id: 3,
@@ -172,7 +172,7 @@ export default function Home() {
       color: "Multi Colour",
       handles: "Thread Handles",
       paper: "Cyber XL 220 GSM Gloss Lamination",
-      alt: "6x6x4 inch premium paper bag with gloss lamination - Cyber XL 220 GSM",
+      alt: "6x6x4 inch premium paper bags ecobags with gloss lamination - luxury paperbags eco bags gift bags India",
     },
     {
       id: 4,
@@ -181,7 +181,7 @@ export default function Home() {
       color: "Multi Colour",
       handles: "Special Handles",
       paper: "Cyber XL 250 GSM Matt Lamination",
-      alt: "14x10x4 inch luxury paper bag with matt lamination and special handles",
+      alt: "14x10x4 inch luxury paper bags ecobags with matt lamination - premium paperbags eco bags shopping bags wholesale",
     },
     {
       id: 5,
@@ -190,7 +190,7 @@ export default function Home() {
       color: "Multi Colour",
       handles: "Satin Ribbon",
       paper: "Cyber XL 270 GSM",
-      alt: "15x12x4 inch premium gift bag with satin ribbon handles - Cyber XL 270 GSM",
+      alt: "15x12x4 inch premium gift bags ecobags with satin ribbon - luxury paper bags paperbags eco bags India",
     },
     {
       id: 6,
@@ -199,7 +199,7 @@ export default function Home() {
       color: "Multi Colour",
       handles: "Thread Handles",
       paper: "Cyber XL 300 GSM Gold Foiling",
-      alt: "17x12x5 inch luxury paper bag with gold foiling - Cyber XL 300 GSM",
+      alt: "17x12x5 inch luxury paper bags ecobags with gold foiling - premium paperbags eco bags shopping bags manufacturer",
     },
     {
       id: 7,
@@ -208,7 +208,7 @@ export default function Home() {
       color: "Multi Colour",
       handles: "Paper Handles",
       paper: "Viva Linear 160 GSM",
-      alt: "15.25x18.65x4 inch eco-friendly shopping bag with paper handles - Viva Linear 160 GSM",
+      alt: "15.25x18.65x4 inch eco-friendly shopping bags ecobags with paper handles - sustainable paperbags eco bags bulk wholesale",
     },
     {
       id: 8,
@@ -217,16 +217,98 @@ export default function Home() {
       color: "Two Colour",
       handles: "Paper Handles",
       paper: "White 160 GSM",
-      alt: "12x16x4 inch white paper bag with paper handles - 160 GSM sustainable packaging",
+      alt: "12x16x4 inch white paper bags ecobags with paper handles - 160 GSM sustainable paperbags eco bags packaging India",
     },
   ];
 
+  // Breadcrumb Schema
+  const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://ecobagsfactory.org/"
+      }
+    ]
+  };
+
+  // Additional Product Offers Schema for SEO
+  const offersSchema = {
+    "@context": "https://schema.org",
+    "@type": "OfferCatalog",
+    "name": "EcoBagsFactory ecobags and paperbags Collection",
+    "description": "EcoBagsFactory premium ecobags, paperbags, kraft bags, custom printed ecobags, gift paperbags, shopping bags - buy ecobags online, wholesale paperbags, bulk orders available",
+    "itemListElement": [
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Product",
+          "name": "Kraft paperbags - EcoBagsFactory ecobags",
+          "description": "EcoBagsFactory brown kraft paperbags ecobags for retail, shopping, wholesale - buy ecobags online",
+          "brand": { "@type": "Brand", "name": "EcoBagsFactory" },
+          "category": "ecobags paperbags"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Product",
+          "name": "Custom Printed paperbags - EcoBagsFactory ecobags",
+          "description": "EcoBagsFactory custom printed ecobags paperbags with logo, personalized paperbags, branded ecobags",
+          "brand": { "@type": "Brand", "name": "EcoBagsFactory" },
+          "category": "Custom ecobags paperbags"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Product",
+          "name": "White paperbags - Premium EcoBagsFactory ecobags",
+          "description": "EcoBagsFactory premium white paperbags ecobags for boutiques, gift shops, retail - buy paperbags online",
+          "brand": { "@type": "Brand", "name": "EcoBagsFactory" },
+          "category": "Premium ecobags paperbags"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Product",
+          "name": "Gift paperbags - Luxury EcoBagsFactory ecobags",
+          "description": "EcoBagsFactory luxury gift paperbags ecobags with custom designs, wholesale ecobags and paperbags available",
+          "brand": { "@type": "Brand", "name": "EcoBagsFactory" },
+          "category": "Gift ecobags paperbags"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Product",
+          "name": "Shopping paperbags - Bulk EcoBagsFactory ecobags",
+          "description": "EcoBagsFactory shopping paperbags ecobags bulk wholesale orders, buy paperbags online India, ecobags supplier",
+          "brand": { "@type": "Brand", "name": "EcoBagsFactory" },
+          "category": "Wholesale ecobags paperbags"
+        }
+      }
+    ]
+  };
+
   return (
     <div className="pt-20">
-      {/* Product List Schema for SEO */}
+      {/* Hidden SEO Schemas - Not visible in UI but powerful for search rankings */}
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(productListSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(offersSchema) }}
       />
       <HeroSection />
 
@@ -295,19 +377,19 @@ export default function Home() {
                 <CardContent className="pt-4 pb-6">
                   <div className="space-y-2">
                     <div className="flex items-center gap-2">
-                      <Package className="w-4 h-4 text-primary flex-shrink-0" />
+                      <Package className="w-4 h-4 text-primary shrink-0" />
                       <p className="text-sm font-semibold text-foreground">
                         {variety.size}
                       </p>
                     </div>
                     <div className="flex items-start gap-2">
-                      <div className="w-4 h-4 rounded-full bg-primary/20 flex-shrink-0 mt-0.5" />
+                      <div className="w-4 h-4 rounded-full bg-primary/20 shrink-0 mt-0.5" />
                       <p className="text-sm text-muted-foreground">
                         {variety.color}
                       </p>
                     </div>
                     <div className="flex items-start gap-2">
-                      <div className="w-4 h-4 flex-shrink-0 mt-0.5">
+                      <div className="w-4 h-4 shrink-0 mt-0.5">
                         <div className="w-full h-full border-2 border-primary/40 rounded" />
                       </div>
                       <p className="text-sm text-muted-foreground">
@@ -315,7 +397,7 @@ export default function Home() {
                       </p>
                     </div>
                     <div className="flex items-start gap-2">
-                      <Leaf className="w-4 h-4 text-primary flex-shrink-0 mt-0.5" />
+                      <Leaf className="w-4 h-4 text-primary shrink-0 mt-0.5" />
                       <p className="text-sm text-muted-foreground font-medium">
                         {variety.paper}
                       </p>
@@ -379,6 +461,67 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      {/* Hidden FAQ Schema for SEO (not visible in UI) */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "What is EcoBagsFactory and what are ecobags and paperbags?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "EcoBagsFactory is India's leading manufacturer of ecobags and paperbags. ecobags (also known as eco bags) and paperbags (paper bags) are environmentally friendly alternatives to plastic bags. Made from 100% recyclable and biodegradable materials, ecobags and paperbags from EcoBagsFactory help reduce plastic waste and are perfect for businesses looking to adopt sustainable packaging solutions."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Where can I buy ecobags and paperbags online in India?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "EcoBagsFactory is the leading ecobags and paperbags manufacturer in India. You can buy ecobags online and order paperbags at wholesale prices directly from EcoBagsFactory. We offer bulk ecobags, custom printed paperbags, kraft bags, gift bags, and shopping bags with fast shipping across India. Visit ecobagsfactory.org to buy ecobags and paperbags online."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Can I customize ecobags and paperbags with my brand logo?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Yes! At EcoBagsFactory, we specialize in custom printed ecobags and paperbags. You can personalize your ecobags and paperbags with your brand logo, colors, and design. EcoBagsFactory offers various printing options for paperbags including Spot UV, gold foiling, and matt/gloss lamination on ecobags."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "What sizes of ecobags and paperbags does EcoBagsFactory manufacture?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "EcoBagsFactory produces ecobags and paperbags in all sizes - from small gift paperbags (6x6x4 inch) to large shopping ecobags (17x12x5 inch). EcoBagsFactory manufactures custom sizes of ecobags and paperbags to meet your specific requirements."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Are EcoBagsFactory ecobags and paperbags 100% eco-friendly and biodegradable?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Absolutely! All EcoBagsFactory ecobags and paperbags are made from 100% recyclable and biodegradable materials. Unlike plastic bags, our eco-friendly ecobags and paperbags naturally decompose without harming the environment. EcoBagsFactory paperbags can also be recycled multiple times."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "What is the minimum order quantity for bulk ecobags and paperbags from EcoBagsFactory?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "At EcoBagsFactory, we offer flexible minimum order quantities for both plain and custom printed ecobags and paperbags. Whether you need 500 pieces of ecobags for a small business or 50,000+ paperbags for large retail chains, EcoBagsFactory can accommodate your bulk ecobags and paperbags order. Contact us for the best wholesale prices on ecobags and paperbags in India."
+                }
+              }
+            ]
+          })
+        }}
+      />
 
       {/* CTA Section */}
       <section className="py-20 bg-background">
