@@ -2,9 +2,10 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { ShoppingBag, Menu, X } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useState } from "react";
+import Image from "next/image";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -28,9 +29,15 @@ const Navbar = () => {
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
-          <Link href="/" className="flex items-center gap-2 group cursor-pointer">
-            <div className="p-2 rounded-lg bg-primary/10 group-hover:bg-primary/20 transition-colors">
-              <ShoppingBag className="w-6 h-6 text-primary" />
+          <Link href="/" className="flex items-center gap-3 group cursor-pointer">
+            <div className="relative w-36 h-36 rounded-lg overflow-hidden group-hover:scale-105 transition-transform">
+              <Image
+                src="/logo/eco-bags-logo.png"
+                alt="EcoBagsFactory Logo"
+                fill
+                className="object-contain"
+                priority
+              />
             </div>
             <span className="text-2xl font-bold">
               <span className="text-primary">EcoBags</span>

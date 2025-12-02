@@ -523,6 +523,83 @@ export default function Home() {
         }}
       />
 
+      {/* Our Clients Section - Infinite Auto Scroll */}
+      <section className="py-20 earth-gradient overflow-hidden">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-16 animate-fade-in-up">
+            <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-4">
+              Our <span className="text-primary">Trusted Clients</span>
+            </h2>
+            <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
+              Proud to serve leading brands with premium eco-friendly packaging solutions
+            </p>
+          </div>
+
+          {/* Infinite Auto-Scrolling Container */}
+          <div className="relative">
+            <div className="flex gap-6 animate-infinite-scroll hover:pause-animation">
+              {/* First set of clients */}
+              {[
+                { name: "Neerus", image: "/clients/neerus.png", alt: "Neerus client EcoBagsFactory ecobags paperbags manufacturer Hyderabad - premium ecobags hyd paper bags supplier India" },
+                { name: "Almond House", image: "/clients/almond-house.png", alt: "Almond House client EcoBagsFactory ecobags paperbags manufacturer - custom printed ecobags paper bags Hyderabad" },
+                { name: "Ramraj Cotton", image: "/clients/ramraj.png", alt: "Ramraj Cotton client EcoBagsFactory ecobags paperbags - eco friendly paper bags ecobags hyd manufacturer India" },
+                { name: "G. Pulla Reddy Sweets", image: "/clients/g-pulla-reddy.png", alt: "G Pulla Reddy Sweets client EcoBagsFactory ecobags paperbags - wholesale ecobags paper bags manufacturer Hyderabad" },
+                { name: "Cafe Niloufer", image: "/clients/cafe-niloufer.png", alt: "Cafe Niloufer client EcoBagsFactory ecobags paperbags - biodegradable ecobags paper bags supplier hyd India" },
+              ].map((client) => (
+                <Card
+                  key={`${client.name}-1`}
+                  className="shrink-0 w-64 p-6 bg-card border-border/50 group hover:shadow-lg transition-all duration-300"
+                >
+                  <div className="relative h-28 flex items-center justify-center">
+                    <Image
+                      src={client.image}
+                      alt={client.alt}
+                      width={250}
+                      height={120}
+                      className="w-full h-full object-contain transition-transform duration-300 group-hover:scale-110"
+                    />
+                  </div>
+                </Card>
+              ))}
+              {/* Duplicate set for infinite effect */}
+              {[
+                { name: "Neerus", image: "/clients/neerus.png", alt: "Neerus client EcoBagsFactory ecobags paperbags manufacturer Hyderabad - premium ecobags hyd paper bags supplier India" },
+                { name: "Almond House", image: "/clients/almond-house.png", alt: "Almond House client EcoBagsFactory ecobags paperbags manufacturer - custom printed ecobags paper bags Hyderabad" },
+                { name: "Ramraj Cotton", image: "/clients/ramraj.png", alt: "Ramraj Cotton client EcoBagsFactory ecobags paperbags - eco friendly paper bags ecobags hyd manufacturer India" },
+                { name: "G. Pulla Reddy Sweets", image: "/clients/g-pulla-reddy.png", alt: "G Pulla Reddy Sweets client EcoBagsFactory ecobags paperbags - wholesale ecobags paper bags manufacturer Hyderabad" },
+                { name: "Cafe Niloufer", image: "/clients/cafe-niloufer.png", alt: "Cafe Niloufer client EcoBagsFactory ecobags paperbags - biodegradable ecobags paper bags supplier hyd India" },
+              ].map((client) => (
+                <Card
+                  key={`${client.name}-2`}
+                  className="shrink-0 w-64 p-6 bg-card border-border/50 group hover:shadow-lg transition-all duration-300"
+                >
+                  <div className="relative h-28 flex items-center justify-center">
+                    <Image
+                      src={client.image}
+                      alt={client.alt}
+                      width={250}
+                      height={120}
+                      className="w-full h-full object-contain transition-transform duration-300 group-hover:scale-110"
+                    />
+                  </div>
+                </Card>
+              ))}
+            </div>
+          </div>
+
+          <div className="text-center mt-12">
+            <p className="text-lg text-muted-foreground mb-6">
+              Join these industry leaders in choosing sustainable packaging
+            </p>
+            <Link href="/contact">
+              <Button size="lg" className="eco-gradient text-white cursor-pointer">
+                Become a Partner
+              </Button>
+            </Link>
+          </div>
+        </div>
+      </section>
+
       {/* CTA Section */}
       <section className="py-20 bg-background">
         <div className="container mx-auto px-4">

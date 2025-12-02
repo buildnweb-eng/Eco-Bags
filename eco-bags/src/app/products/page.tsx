@@ -6,12 +6,12 @@ import Image from "next/image";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Products - Eco-friendly Paper Bags Collection",
-  description: "Explore our range of sustainable paper bags: Classic Kraft Bags, Premium White Bags, and Custom Printed Bags. All sizes available. 100% recyclable and biodegradable.",
-  keywords: ["kraft paper bags", "custom printed bags", "white paper bags", "shopping bags", "gift bags", "recyclable paper bags", "paper bags wholesale"],
+  title: "EcoBagsFactory Products | ecobags paperbags Hyderabad - Custom Paper Bags Manufacturer India",
+  description: "EcoBagsFactory ecobags paperbags manufacturer Hyderabad - Browse our premium collection of custom printed ecobags, kraft paperbags, wholesale paper bags. Buy ecobags hyd India. Real client projects showcase.",
+  keywords: ["ecobags", "paperbags", "EcoBagsFactory", "ecobags hyd", "paper bags Hyderabad", "ecobags manufacturer", "paperbags manufacturer", "custom printed bags", "kraft paper bags", "wholesale paper bags", "ecobags India", "paperbags supplier", "buy ecobags online", "paper bags wholesale"],
   openGraph: {
-    title: "EcoBagsFactory Products - Sustainable Paper Bags",
-    description: "High-quality eco-friendly paper bags in various sizes and designs. Custom printing available.",
+    title: "EcoBagsFactory Products - ecobags paperbags Manufacturer Hyderabad",
+    description: "Premium ecobags and paperbags manufacturer in Hyderabad. Custom printed paper bags for brands across India. View our real client projects.",
     images: ["/product-1.jpg"],
   },
 };
@@ -48,86 +48,137 @@ export default function Products() {
   ];
 
   return (
-    <div className="pt-32 pb-20">
+    <div className="pt-16 pb-20">
       <div className="container mx-auto px-4">
-        {/* Header */}
-        <div className="max-w-4xl mx-auto text-center mb-16 animate-fade-in-up">
-          <h1 className="text-5xl md:text-6xl font-bold text-foreground mb-6">
-            Eco Bags <span className="text-primary">Hyderabad</span> Collection
-          </h1>
-          <p className="text-xl text-muted-foreground">
-            Discover our range of sustainable, high-quality paper bags designed 
-            for businesses of all sizes
-          </p>
+        {/* Our Collections - Real Projects Gallery */}
+        <div className="mb-16">
+          <div className="text-center mb-8">
+            <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-4">
+              Our <span className="text-primary">Collections</span>
+            </h2>
+            <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
+              Premium   paperbags manufactured by EcoBagsFactory
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+            {[
+              { name: "Neerus Collection", image: "/Collections/Neerus.jpeg", alt: "Neerus custom printed ecobags paperbags EcoBagsFactory manufacturer Hyderabad - premium paper bags hyd India" },
+              { name: "Almond House Collection", image: "/Collections/Almond-house.jpeg", alt: "Almond House branded ecobags paperbags EcoBagsFactory - custom paper bags manufacturer Hyderabad India" },
+              { name: "Ramraj Collection", image: "/Collections/Ramraj.jpeg", alt: "Ramraj Cotton ecobags paperbags EcoBagsFactory - wholesale paper bags manufacturer Hyderabad hyd" },
+              { name: "Pulla Reddy Sweets Collection", image: "/Collections/Pulla-reddy-sweets.jpeg", alt: "Pulla Reddy Sweets ecobags paperbags EcoBagsFactory - custom branded paper bags Hyderabad India" },
+              { name: "Cafe Niloufer Collection", image: "/Collections/Cafe-niloufer.jpeg", alt: "Cafe Niloufer ecobags paperbags EcoBagsFactory - eco friendly paper bags manufacturer hyd Hyderabad" },
+              { name: "Brand Dot Collection", image: "/Collections/Brand-dot.jpeg", alt: "Brand Dot custom ecobags paperbags EcoBagsFactory - printed paper bags manufacturer Hyderabad India" },
+              { name: "Saravana Collection", image: "/Collections/Saravana.jpeg", alt: "Saravana ecobags paperbags EcoBagsFactory - bulk paper bags manufacturer supplier Hyderabad hyd India" },
+              { name: "Cherrys Collection", image: "/Collections/Cherrys.jpeg", alt: "Cherrys custom ecobags paperbags EcoBagsFactory - premium paper bags manufacturer Hyderabad India" },
+              { name: "Chennai Jewellers Collection", image: "/Collections/chennai-jewllers.jpeg", alt: "Chennai Jewellers luxury ecobags paperbags EcoBagsFactory - premium paper bags manufacturer Hyderabad India" },
+              { name: "Neeraj Collection", image: "/Collections/neeraj.jpeg", alt: "Neeraj custom branded ecobags paperbags EcoBagsFactory - paper bags manufacturer Hyderabad hyd India" },
+              { name: "Tanika Collection", image: "/Collections/Tanika.jpeg", alt: "Tanika fashion ecobags paperbags EcoBagsFactory - custom printed paper bags manufacturer Hyderabad India" },
+              { name: "Tyohaar Collection", image: "/Collections/Tyohaar.jpeg", alt: "Tyohaar festive ecobags paperbags EcoBagsFactory - custom paper bags manufacturer Hyderabad hyd India" },
+              { name: "Paper Bags Collection", image: "/Collections/bags.jpeg", alt: "EcoBagsFactory ecobags paperbags collection - wholesale paper bags manufacturer supplier Hyderabad hyd India" },
+            ].map((collection, index) => (
+              <Card
+                key={collection.name}
+                className="hover-lift overflow-hidden border-border/50 group"
+                style={{ animationDelay: `${index * 50}ms` }}
+              >
+                <div className="relative h-72 overflow-hidden bg-secondary/30">
+                  <Image
+                    src={collection.image}
+                    alt={collection.alt}
+                    width={400}
+                    height={400}
+                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                  />
+                </div>
+                <CardContent className="p-4">
+                  <h3 className="text-lg font-semibold text-foreground text-center">
+                    {collection.name}
+                  </h3>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
         </div>
 
-        {/* Products Grid */}
-        <div className="grid lg:grid-cols-3 gap-8 mb-16">
-          {products.map((product, index) => (
-            <Card
-              key={product.id}
-              className="hover-lift border-border/50 overflow-hidden"
-              style={{ animationDelay: `${index * 100}ms` }}
-            >
-              <div className="relative h-80 overflow-hidden">
-                <Image
-                  src={product.image}
-                  alt={product.alt}
-                  width={400}
-                  height={320}
-                  className="w-full h-full object-cover transition-transform duration-500 hover:scale-110"
-                />
-              </div>
-              <CardContent className="p-6">
-                <h3 className="text-2xl font-bold text-foreground mb-3">
-                  {product.name}
-                </h3>
-                <p className="text-muted-foreground mb-4">
-                  {product.description}
-                </p>
+        {/* Products Grid - Eco Bags Hyderabad Collection */}
+        <div className="mb-16">
+          <div className="text-center mb-12">
+            <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-4">
+              Eco Bags <span className="text-primary">Product Types</span>
+            </h2>
+            <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
+              Choose from our premium range of paper bags for your business needs
+            </p>
+          </div>
 
-                <div className="mb-4">
-                  <h4 className="font-semibold text-foreground mb-2">
-                    Available Sizes:
-                  </h4>
-                  <div className="flex flex-wrap gap-2">
-                    {product.sizes.map((size) => (
-                      <span
-                        key={size}
-                        className="px-3 py-1 rounded-full bg-secondary text-secondary-foreground text-sm"
-                      >
-                        {size}
-                      </span>
-                    ))}
+          <div className="grid lg:grid-cols-3 gap-8">
+            {products.map((product, index) => (
+              <Card
+                key={product.id}
+                className="hover-lift border-border/50 overflow-hidden"
+                style={{ animationDelay: `${index * 100}ms` }}
+              >
+                <div className="relative h-80 overflow-hidden">
+                  <Image
+                    src={product.image}
+                    alt={product.alt}
+                    width={400}
+                    height={320}
+                    className="w-full h-full object-cover transition-transform duration-500 hover:scale-110"
+                  />
+                </div>
+                <CardContent className="p-6">
+                  <h3 className="text-2xl font-bold text-foreground mb-3">
+                    {product.name}
+                  </h3>
+                  <p className="text-muted-foreground mb-4">
+                    {product.description}
+                  </p>
+
+                  <div className="mb-4">
+                    <h4 className="font-semibold text-foreground mb-2">
+                      Available Sizes:
+                    </h4>
+                    <div className="flex flex-wrap gap-2">
+                      {product.sizes.map((size) => (
+                        <span
+                          key={size}
+                          className="px-3 py-1 rounded-full bg-secondary text-secondary-foreground text-sm"
+                        >
+                          {size}
+                        </span>
+                      ))}
+                    </div>
                   </div>
-                </div>
 
-                <div className="mb-6">
-                  <h4 className="font-semibold text-foreground mb-2">
-                    Features:
-                  </h4>
-                  <ul className="space-y-2">
-                    {product.features.map((feature) => (
-                      <li
-                        key={feature}
-                        className="flex items-center gap-2 text-muted-foreground"
-                      >
-                        <Check className="w-4 h-4 text-primary flex-shrink-0" />
-                        <span>{feature}</span>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
+                  <div className="mb-6">
+                    <h4 className="font-semibold text-foreground mb-2">
+                      Features:
+                    </h4>
+                    <ul className="space-y-2">
+                      {product.features.map((feature) => (
+                        <li
+                          key={feature}
+                          className="flex items-center gap-2 text-muted-foreground"
+                        >
+                          <Check className="w-4 h-4 text-primary shrink-0" />
+                          <span>{feature}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
 
-                <Link href="/contact">
-                  <Button className="w-full eco-gradient text-white">
-                    <ShoppingBag className="mr-2 w-4 h-4" />
-                    Order Now
-                  </Button>
-                </Link>
-              </CardContent>
-            </Card>
-          ))}
+                  <Link href="/contact">
+                    <Button className="w-full eco-gradient text-white">
+                      <ShoppingBag className="mr-2 w-4 h-4" />
+                      Order Now
+                    </Button>
+                  </Link>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
         </div>
 
         {/* CTA Section */}
