@@ -1,4 +1,5 @@
 import { Card, CardContent } from "@/components/ui/card";
+import AboutGallery from "@/components/AboutGallery";
 import { Leaf, Users, Award, Target } from "lucide-react";
 import Image from "next/image";
 import { Metadata } from "next";
@@ -44,43 +45,47 @@ export default function About() {
         {/* Hero Section */}
         <div className="max-w-4xl mx-auto text-center mb-20 animate-fade-in-up">
           <h1 className="text-5xl md:text-6xl font-bold text-foreground mb-6">
-            About <span className="text-primary">EcoBagsFactory</span> Hyderabad
+            About <span className="text-primary">EcoBagsFactory</span>
           </h1>
           <p className="text-xl text-muted-foreground leading-relaxed">
-            Leading the way in sustainable packaging solutions since our founding. 
+            Leading the way in sustainable packaging solutions since our founding.
             We believe that businesses can thrive while protecting our planet.
           </p>
         </div>
 
         {/* Story Section */}
-        <div className="grid md:grid-cols-2 gap-12 items-center mb-20">
+        <div className="grid md:grid-cols-2 gap-12 items-center mb-12">
           <div className="space-y-6">
             <h2 className="text-4xl font-bold text-foreground">Our Story</h2>
             <p className="text-muted-foreground leading-relaxed">
-              EcoBags was born from a simple yet powerful vision: to create packaging 
-              solutions that businesses can feel good about. We saw the environmental 
+              EcoBagsFactory was born from a simple yet powerful vision: to create packaging
+              solutions that businesses can feel good about. We saw the environmental
               impact of plastic bags and knew there had to be a better way.
             </p>
             <p className="text-muted-foreground leading-relaxed">
-              Starting with a small workshop and a commitment to sustainability, 
-              we&apos;ve grown into a trusted partner for businesses across the country. 
+              Starting with a small workshop and a commitment to sustainability,
+              we&apos;ve grown into a trusted partner for businesses across the country.
               Every bag we produce is a step toward a greener tomorrow.
             </p>
             <p className="text-muted-foreground leading-relaxed">
-              Today, we&apos;re proud to offer a wide range of eco-friendly paper bags 
+              Today, we&apos;re proud to offer a wide range of eco-friendly paper bags
               that combine style, durability, and environmental responsibility.
             </p>
           </div>
-          <div className="relative">
+          <div className="relative h-[400px] w-full">
             <div className="absolute inset-0 bg-primary/20 rounded-3xl blur-3xl" />
             <Image
-              src="/about-image.jpg"
-              alt="EcoBagsFactory manufacturing process - eco-friendly paper bags production and craftsmanship"
-              width={600}
-              height={400}
-              className="relative rounded-3xl shadow-2xl w-full"
+              src="/factory/factory-enhanced-1.png"
+              alt="EcoBagsFactory manufacturing process"
+              fill
+              className="object-cover rounded-3xl shadow-2xl"
             />
           </div>
+        </div>
+
+        {/* Gallery Section */}
+        <div className="mb-20">
+          <AboutGallery />
         </div>
 
         {/* Values Section */}

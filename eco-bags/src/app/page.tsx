@@ -5,6 +5,7 @@ import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import { Metadata } from "next";
+import FactoryShowcase from "@/components/FactoryShowcase";
 
 export const metadata: Metadata = {
   title: "EcoBagsFactory | ecobags | paperbags - Buy Premium Paper Bags Online India",
@@ -342,6 +343,24 @@ export default function Home() {
                 </CardContent>
               </Card>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Manufacturing Excellence Section */}
+      <section className="py-20 bg-muted/30">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-16 animate-fade-in-up">
+            <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-4">
+              Manufacturing <span className="text-primary">Excellence</span>
+            </h2>
+            <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
+              State-of-the-art machinery meets skilled craftsmanship to deliver premium quality
+            </p>
+          </div>
+
+          <div className="mt-12">
+            <FactoryShowcase />
           </div>
         </div>
       </section>
