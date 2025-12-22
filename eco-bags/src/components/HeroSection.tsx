@@ -3,6 +3,7 @@ import { ArrowRight, Leaf, Phone, Mail } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
 
+// Updated: Dec 22, 2025 - Hero text layout fix
 const HeroSection = () => {
   return (
     <section className="relative min-h-screen flex items-center overflow-hidden">
