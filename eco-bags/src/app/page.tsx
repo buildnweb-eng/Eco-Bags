@@ -385,13 +385,18 @@ export default function Home() {
                 style={{ animationDelay: `${index * 50}ms` }}
               >
                 <div className="relative h-64 overflow-hidden bg-secondary/30">
-                  <Image
-                    src={variety.image}
-                    alt={variety.alt}
-                    width={400}
-                    height={400}
-                    className="w-full h-full object-contain p-4 group-hover:scale-105 transition-transform duration-300"
-                  />
+                  <div className="relative w-full h-full p-4">
+                    <div className="relative w-full h-full overflow-hidden">
+                      <Image
+                        src={variety.image}
+                        alt={variety.alt}
+                        width={400}
+                        height={400}
+                        className="w-full h-[120%] object-contain group-hover:scale-105 transition-transform duration-300"
+                        style={{ marginTop: '-8%' }}
+                      />
+                    </div>
+                  </div>
                 </div>
                 <CardContent className="pt-4 pb-6">
                   <div className="space-y-2">

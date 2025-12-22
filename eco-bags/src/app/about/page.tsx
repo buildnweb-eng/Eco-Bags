@@ -75,7 +75,7 @@ export default function About() {
           <div className="relative h-[400px] w-full">
             <div className="absolute inset-0 bg-primary/20 rounded-3xl blur-3xl" />
             <Image
-              src="/factory/factory-enhanced-1.png"
+              src="/factory/factory-enhanced-1.1.jpeg"
               alt="EcoBagsFactory manufacturing process"
               fill
               className="object-cover rounded-3xl shadow-2xl"

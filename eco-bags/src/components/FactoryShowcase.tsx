@@ -10,7 +10,7 @@ const factoryImages = [
         id: 1,
         title: "Advanced Machinery",
         description: "High-speed automated production for bulk orders",
-        src: "/factory/factory-enhanced-1.png",
+        src: "/factory/factory-enhanced-1.1.jpeg",
     },
     {
         id: 2,

@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Leaf } from "lucide-react";
+import { ArrowRight, Leaf, Phone, Mail } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
 
@@ -19,13 +19,36 @@ const HeroSection = () => {
             </div>
             
             <h1 className="text-5xl md:text-7xl font-bold text-foreground leading-tight">
-              Eco-Friendly Paper Bags
-              <span className="block text-primary">Manufacturer in Hyderabad</span>
+              Eco-Friendly Paper
+              <span className="block">Bags <span className="text-primary">Manufacturer</span></span>
             </h1>
             
             <p className="text-xl text-muted-foreground max-w-lg">
               For a Greener Tomorrow. Sustainable, stylish, and customizable paper bags for your business.
             </p>
+            
+            {/* Contact Info */}
+            <div className="inline-flex flex-wrap items-center gap-4 md:gap-6 py-3 px-4 bg-card/50 border border-border/50 rounded-xl backdrop-blur-sm">
+              <a 
+                href="tel:+919949826222" 
+                className="flex items-center gap-2 text-foreground hover:text-primary transition-colors cursor-pointer group"
+              >
+                <div className="p-2 rounded-lg bg-primary/10 group-hover:bg-primary/20 transition-colors">
+                  <Phone className="w-4 h-4 text-primary" />
+                </div>
+                <span className="font-semibold text-base md:text-lg">+91 9949826222</span>
+              </a>
+              <div className="w-px h-6 bg-border/50 hidden sm:block" />
+              <a 
+                href="mailto:eco4bags@gmail.com" 
+                className="flex items-center gap-2 text-foreground hover:text-primary transition-colors cursor-pointer group"
+              >
+                <div className="p-2 rounded-lg bg-primary/10 group-hover:bg-primary/20 transition-colors">
+                  <Mail className="w-4 h-4 text-primary" />
+                </div>
+                <span className="font-semibold text-base md:text-lg">eco4bags@gmail.com</span>
+              </a>
+            </div>
             
             <div className="flex flex-wrap gap-4 pt-4">
               <Link href="/products" className="cursor-pointer">
@@ -57,7 +80,7 @@ const HeroSection = () => {
       </div>
 
       {/* Decorative elements */}
-      <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-background to-transparent" />
+      <div className="absolute bottom-0 left-0 right-0 h-32 bg-linear-to-t from-background to-transparent" />
     </section>
   );
 };

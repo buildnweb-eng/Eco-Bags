@@ -16,6 +16,13 @@ export const metadata: Metadata = {
   },
 };
 
+type Collection = {
+  name: string;
+  image: string;
+  alt: string;
+  specs?: string;
+};
+
 export default function Products() {
   const products = [
     {
@@ -76,6 +83,9 @@ export default function Products() {
               { name: "Tanika Collection", image: "/Collections/Tanika.jpeg", alt: "Tanika fashion ecobags paperbags EcoBagsFactory - custom printed paper bags manufacturer Hyderabad India" },
               { name: "Tyohaar Collection", image: "/Collections/Tyohaar.jpeg", alt: "Tyohaar festive ecobags paperbags EcoBagsFactory - custom paper bags manufacturer Hyderabad hyd India" },
               { name: "Paper Bags Collection", image: "/Collections/bags.jpeg", alt: "EcoBagsFactory ecobags paperbags collection - wholesale paper bags manufacturer supplier Hyderabad hyd India" },
+              { name: "Top Chop", image: "/Collections/Top-chop.jpeg", alt: "Top Chop ecobags paperbags EcoBagsFactory - 10x12x7.5 inch 140 GSM single colour print paper handles Hyderabad", specs: "10×12×7.5 | 140 GSM | Single Colour" },
+              { name: "Golden Shade Brown", image: "/Collections/Golden-shade-brown.jpeg", alt: "Golden Shade Brown ecobags paperbags EcoBagsFactory - 12x11x4 inch 140 GSM paper handles manufacturer Hyderabad", specs: "12×11×4 | 140 GSM" },
+              { name: "Khaba", image: "/Collections/khabab.jpeg", alt: "Khaba ecobags paperbags EcoBagsFactory - 12x13.5x12 inch 160 GSM white viva linear multi colour print paper handles Hyderabad", specs: "12×13.5×12 | 160 GSM | Multi Colour" },
             ].map((collection, index) => (
               <Card
                 key={collection.name}
@@ -95,6 +105,11 @@ export default function Products() {
                   <h3 className="text-lg font-semibold text-foreground text-center">
                     {collection.name}
                   </h3>
+                  {collection.specs && (
+                    <p className="text-sm text-muted-foreground text-center mt-2">
+                      {collection.specs}
+                    </p>
+                  )}
                 </CardContent>
               </Card>
             ))}
