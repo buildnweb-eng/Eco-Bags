@@ -8,12 +8,12 @@ import { Metadata } from "next";
 import FactoryShowcase from "@/components/FactoryShowcase";
 
 export const metadata: Metadata = {
-  title: "EcoBagsFactory | ecobags | paperbags - Buy Premium Paper Bags Online India",
-  description: "EcoBagsFactory - Buy ecobags and paperbags online. India's #1 ecobags manufacturer and paperbags supplier. Premium quality ecobags, custom printed paperbags, kraft paper bags at wholesale prices. 100% recyclable ecobags, biodegradable paperbags. Order ecobags online, bulk paperbags. EcoBagsFactory delivers ecobags and paperbags across India.",
-  keywords: ["EcoBagsFactory", "ecobags", "paperbags", "EcoBags Factory", "ecobags India", "paperbags India", "ecobags manufacturer", "paperbags manufacturer", "ecobags online", "paperbags online", "buy ecobags", "buy paperbags", "ecobags wholesale", "paperbags wholesale", "ecobags bulk", "paperbags bulk", "custom ecobags", "printed paperbags", "kraft paperbags", "ecobags Hyderabad", "paperbags Hyderabad", "ecobags supplier", "paperbags supplier", "cheap ecobags", "cheap paperbags", "ecobags price", "paperbags price", "shopping bags", "gift bags", "grocery bags", "retail bags", "carry bags", "recyclable bags", "biodegradable bags", "eco friendly bags", "sustainable packaging"],
+  title: "Paperbags Manufacturer India | EcoBagsFactory | Paper Bags Manufacturer - ecobags paperbags",
+  description: "EcoBagsFactory - Leading paperbags manufacturer in India. Premier paper bags manufacturer offering custom paperbags manufacturing, wholesale ecobags manufacturing, bulk production. Trusted paperbags manufacturer in Hyderabad, India, and UK. Professional ecobags manufacturer and paperbags manufacturer delivering 100% recyclable bags. Buy from the best paperbags manufacturer - EcoBagsFactory delivers across India.",
+  keywords: ["paperbags manufacturer", "paperbags manufacturer India", "paperbags manufacturer Hyderabad", "paperbags manufacturer hyd", "paperbags manufacturer UK", "paper bags manufacturer", "paper bags manufacturer India", "ecobags manufacturer", "ecobags manufacturer India", "EcoBagsFactory", "EcoBags Factory", "EcoBagsFactory hyd", "Eco Bags Factory", "custom paperbags manufacturer", "printed paperbags manufacturer", "kraft paperbags manufacturer", "wholesale paperbags manufacturer", "bulk paperbags manufacturer", "shopping bags manufacturer", "gift bags manufacturer", "grocery bags manufacturer", "retail bags manufacturer", "carry bags manufacturer", "recyclable bags manufacturer", "biodegradable bags manufacturer", "sustainable packaging manufacturer", "eco friendly bags manufacturer"],
   openGraph: {
-    title: "EcoBagsFactory | ecobags | paperbags - Premium Manufacturer India",
-    description: "EcoBagsFactory - Buy ecobags and paperbags online. Premium quality ecobags at wholesale prices. Custom printed paperbags. 100% recyclable ecobags and biodegradable paperbags.",
+    title: "Paperbags Manufacturer India | EcoBagsFactory - Paper Bags Manufacturer",
+    description: "EcoBagsFactory - Leading paperbags manufacturer in India. Premier paper bags manufacturer. Custom paperbags manufacturing, wholesale, bulk orders. Trusted paperbags manufacturer delivering nationwide.",
     images: ["/hero-bags.jpg"],
   },
 };
@@ -142,9 +142,9 @@ export default function Home() {
   ];
 
   const products = [
-    { id: 1, name: "Classic Kraft Bags", image: "/product-1.jpg", alt: "Classic eco-friendly kraft paper bags for retail and shopping - 100% recyclable ecobags paperbags" },
-    { id: 2, name: "Premium White Bags", image: "/product-2.jpg", alt: "Premium white paper bags eco bags for boutiques and gift shops - sustainable packaging paperbags" },
-    { id: 3, name: "Custom Printed Bags", image: "/product-3.jpg", alt: "Custom printed paper bags ecobags with brand logo - personalized eco-friendly packaging paperbags" },
+    { id: 1, name: "Classic Kraft Bags", image: "/product-1.jpg", alt: "EcoBagsFactory Paperbags Manufacturer - Classic kraft paper bags manufacturing - Professional paper bags manufacturer India - Wholesale kraft paperbags manufacturer - 100% recyclable ecobags manufacturing" },
+    { id: 2, name: "Premium White Bags", image: "/product-2.jpg", alt: "EcoBagsFactory Paper Bags Manufacturer - Premium white paperbags manufacturing - Custom white paper bags manufacturer Hyderabad - Boutique paperbags manufacturer - Sustainable packaging manufacturer" },
+    { id: 3, name: "Custom Printed Bags", image: "/product-3.jpg", alt: "EcoBagsFactory Paperbags Manufacturer - Custom printed paperbags manufacturing - Branded paper bags manufacturer India - Logo printing paperbags manufacturer - Personalized ecobags manufacturer" },
   ];
 
   const varieties = [

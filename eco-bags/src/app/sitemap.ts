@@ -104,6 +104,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.9,
     },
 
+    // Manufacturer Page
+    {
+      url: `${baseUrl}/paperbags-manufacturer`,
+      lastModified: new Date(),
+      changeFrequency: 'weekly',
+      priority: 0.95,
+    },
+
     // Service Landing Pages
     {
       url: `${baseUrl}/kraft-paper-bags`,

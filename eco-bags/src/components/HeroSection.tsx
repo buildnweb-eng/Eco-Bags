@@ -25,7 +25,7 @@ const HeroSection = () => {
             </h1>
             
             <p className="text-xl text-muted-foreground max-w-lg">
-              For a Greener Tomorrow. Sustainable, stylish, and customizable paper bags for your business.
+              Leading Paperbags Manufacturer in India. Sustainable, stylish, and customizable paper bags manufacturing for your business. Trusted paperbags manufacturer since 2010.
             </p>
             
             {/* Contact Info */}
@@ -70,7 +70,7 @@ const HeroSection = () => {
             <div className="absolute inset-0 bg-primary/20 rounded-3xl blur-3xl" />
             <Image
               src="/hero-bags.jpg"
-              alt="EcoBagsFactory eco-friendly paper bags collection - 100% recyclable and biodegradable sustainable packaging"
+              alt="EcoBagsFactory - Leading Paperbags Manufacturer India | Premium Paper Bags Manufacturer Hyderabad | Custom Paperbags Manufacturing - Wholesale Ecobags Manufacturer - 100% Recyclable Biodegradable Sustainable Packaging"
               width={800}
               height={600}
               className="relative rounded-3xl shadow-2xl w-full h-auto"
