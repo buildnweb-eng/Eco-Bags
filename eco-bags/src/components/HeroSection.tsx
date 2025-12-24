@@ -19,9 +19,9 @@ const HeroSection = () => {
               <span className="text-sm font-medium text-primary">100% Eco-Friendly</span>
             </div>
             
-            <h1 className="text-5xl md:text-7xl font-bold text-foreground leading-tight">
-              Eco-Friendly Paper
-              <span className="block">Bags <span className="text-primary">Manufacturer</span></span>
+            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-foreground leading-tight">
+              <span className="block">Eco-Friendly Paper</span>
+              <span className="block whitespace-nowrap">Bags <span className="text-primary">Manufacturer</span></span>
             </h1>
             
             <p className="text-xl text-muted-foreground max-w-lg">
