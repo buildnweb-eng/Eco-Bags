@@ -188,7 +188,7 @@ const ChartTooltipContent = React.forwardRef<
                 )}
               >
                 {formatter && item?.value !== undefined && item.name ? (
-                  formatter(item.value, item.name, item, index, payload)
+                  formatter(item.value, item.name, item as any, index, payload as any)
                 ) : (
                   <>
                     {itemConfig?.icon ? (
