@@ -1,12 +1,22 @@
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Contact Us - Get in Touch with EcoBagsFactory",
-  description: "Contact EcoBagsFactory for eco-friendly paper bags in Hyderabad. Call +91 9949826222 or email eco4bags@gmail.com. Visit us at Kukatpally, Hyderabad. Monday-Saturday: 9AM-7PM.",
-  keywords: ["contact EcoBagsFactory", "paper bags supplier Hyderabad", "eco-friendly bags contact", "paper bags manufacturer contact"],
+  title: "Contact EcoBagsFactory Hyderabad - Paperbags Manufacturer India | Get Quote",
+  description: "Contact EcoBagsFactory - Leading paperbags manufacturer in India. Call +91 9949826222 for custom paper bags manufacturing, wholesale orders. Visit us at Kukatpally, Hyderabad. Best paperbags manufacturer contact for bulk orders.",
+  keywords: [
+    "contact EcoBagsFactory",
+    "paperbags manufacturer contact",
+    "paperbags manufacturer Hyderabad contact",
+    "paper bags manufacturer India contact",
+    "paper bags supplier Hyderabad",
+    "eco-friendly bags contact",
+    "custom bags manufacturer contact",
+    "wholesale paperbags manufacturer"
+  ],
   openGraph: {
-    title: "Contact EcoBagsFactory - Paper Bags Manufacturer",
-    description: "Get in touch with us for sustainable packaging solutions. Located in Hyderabad.",
+    title: "Contact EcoBagsFactory - Paperbags Manufacturer Hyderabad",
+    description: "Get in touch with India's leading paperbags manufacturer. Located in Kukatpally, Hyderabad.",
+    images: ["/hero-bags.jpg"],
   },
 };
 

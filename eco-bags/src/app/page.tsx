@@ -1,6 +1,6 @@
 import HeroSection from "@/components/HeroSection";
 import { Card, CardContent } from "@/components/ui/card";
-import { Leaf, Recycle, Package, Heart } from "lucide-react";
+import { Leaf, Recycle, Package, Heart, Download, FileText } from "lucide-react";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
@@ -147,79 +147,15 @@ export default function Home() {
     { id: 3, name: "Custom Printed Bags", image: "/product-3.jpg", alt: "EcoBagsFactory Paperbags Manufacturer - Custom printed paperbags manufacturing - Branded paper bags manufacturer India - Logo printing paperbags manufacturer - Personalized ecobags manufacturer" },
   ];
 
-  const varieties = [
-    {
-      id: 1,
-      image: "/varieties/1.png",
-      size: "9x8x8 inch",
-      color: "Two Colour",
-      handles: "Thread Handles",
-      paper: "Brown 140 GSM",
-      alt: "9x8x8 inch eco-friendly paper bags ecobags kraft paperbags with thread handles - Brown 140 GSM eco bags manufacturer",
-    },
-    {
-      id: 2,
-      image: "/varieties/2.png",
-      size: "12x8x3.5 inch",
-      color: "Multi Colour",
-      handles: "Thread Handles",
-      paper: "Spot UV Coating",
-      alt: "12x8x3.5 inch custom printed paper bags ecobags with Spot UV coating - personalized paperbags eco bags India",
-    },
-    {
-      id: 3,
-      image: "/varieties/3.png",
-      size: "6x6x4 inch",
-      color: "Multi Colour",
-      handles: "Thread Handles",
-      paper: "Cyber XL 220 GSM Gloss Lamination",
-      alt: "6x6x4 inch premium paper bags ecobags with gloss lamination - luxury paperbags eco bags gift bags India",
-    },
-    {
-      id: 4,
-      image: "/varieties/4.png",
-      size: "14x10x4 inch",
-      color: "Multi Colour",
-      handles: "Special Handles",
-      paper: "Cyber XL 250 GSM Matt Lamination",
-      alt: "14x10x4 inch luxury paper bags ecobags with matt lamination - premium paperbags eco bags shopping bags wholesale",
-    },
-    {
-      id: 5,
-      image: "/varieties/5.png",
-      size: "15x12x4 inch",
-      color: "Multi Colour",
-      handles: "Satin Ribbon",
-      paper: "Cyber XL 270 GSM",
-      alt: "15x12x4 inch premium gift bags ecobags with satin ribbon - luxury paper bags paperbags eco bags India",
-    },
-    {
-      id: 6,
-      image: "/varieties/6.png",
-      size: "17x12x5 inch",
-      color: "Multi Colour",
-      handles: "Thread Handles",
-      paper: "Cyber XL 300 GSM Gold Foiling",
-      alt: "17x12x5 inch luxury paper bags ecobags with gold foiling - premium paperbags eco bags shopping bags manufacturer",
-    },
-    {
-      id: 7,
-      image: "/varieties/7.png",
-      size: "15.25x18.65x4 inch",
-      color: "Multi Colour",
-      handles: "Paper Handles",
-      paper: "Viva Linear 160 GSM",
-      alt: "15.25x18.65x4 inch eco-friendly shopping bags ecobags with paper handles - sustainable paperbags eco bags bulk wholesale",
-    },
-    {
-      id: 8,
-      image: "/varieties/8.png",
-      size: "12x16x4 inch",
-      color: "Two Colour",
-      handles: "Paper Handles",
-      paper: "White 160 GSM",
-      alt: "12x16x4 inch white paper bags ecobags with paper handles - 160 GSM sustainable paperbags eco bags packaging India",
-    },
+  const collections = [
+    { id: 1, name: "Neerus Collection", image: "/Collections/Neerus.jpeg", alt: "Neerus custom printed ecobags paperbags EcoBagsFactory manufacturer Hyderabad - premium paper bags hyd India" },
+    { id: 2, name: "Almond House Collection", image: "/Collections/Almond-house.jpeg", alt: "Almond House branded ecobags paperbags EcoBagsFactory - custom paper bags manufacturer Hyderabad India" },
+    { id: 3, name: "Ramraj Collection", image: "/Collections/Ramraj.jpeg", alt: "Ramraj Cotton ecobags paperbags EcoBagsFactory - wholesale paper bags manufacturer Hyderabad hyd" },
+    { id: 4, name: "Pulla Reddy Sweets Collection", image: "/Collections/Pulla-reddy-sweets.jpeg", alt: "Pulla Reddy Sweets ecobags paperbags EcoBagsFactory - custom branded paper bags Hyderabad India" },
+    { id: 5, name: "Cafe Niloufer Collection", image: "/Collections/Cafe-niloufer.jpeg", alt: "Cafe Niloufer ecobags paperbags EcoBagsFactory - eco friendly paper bags manufacturer hyd Hyderabad" },
+    { id: 6, name: "Brand Dot Collection", image: "/Collections/Brand-dot.jpeg", alt: "Brand Dot custom ecobags paperbags EcoBagsFactory - printed paper bags manufacturer Hyderabad India" },
+    { id: 7, name: "Saravana Collection", image: "/Collections/Saravana.jpeg", alt: "Saravana ecobags paperbags EcoBagsFactory - bulk paper bags manufacturer supplier Hyderabad hyd India" },
+    { id: 8, name: "Cherrys Collection", image: "/Collections/Cherrys.jpeg", alt: "Cherrys custom ecobags paperbags EcoBagsFactory - premium paper bags manufacturer Hyderabad India" },
   ];
 
   // Breadcrumb Schema
@@ -347,6 +283,42 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Download Brochure Section */}
+      <section className="py-16 bg-muted/30" aria-labelledby="brochure-heading">
+        <div className="container mx-auto px-4">
+          <Card className="overflow-hidden border-primary/20 bg-gradient-to-r from-primary/5 to-primary/10">
+            <CardContent className="p-8 md:p-12">
+              <div className="flex flex-col md:flex-row items-center justify-between gap-6">
+                <div className="flex items-center gap-4">
+                  <div className="p-4 rounded-full bg-primary/10">
+                    <FileText className="w-10 h-10 text-primary" aria-hidden="true" />
+                  </div>
+                  <div>
+                    <h3 id="brochure-heading" className="text-2xl md:text-3xl font-bold text-foreground mb-2">
+                      Download Our Brochure
+                    </h3>
+                    <p className="text-muted-foreground max-w-md">
+                      Get detailed information about our products, services, and manufacturing capabilities
+                    </p>
+                  </div>
+                </div>
+                <a
+                  href="/Browcher/ECO BAG FACTORY BROCHURE.pdf"
+                  download="EcoBagsFactory-Brochure.pdf"
+                  className="shrink-0 rounded-lg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2"
+                  aria-label="Download EcoBagsFactory product brochure PDF"
+                >
+                  <Button size="lg" className="eco-gradient text-white cursor-pointer gap-2">
+                    <Download className="w-5 h-5" aria-hidden="true" />
+                    Download PDF Brochure
+                  </Button>
+                </a>
+              </div>
+            </CardContent>
+          </Card>
+        </div>
+      </section>
+
       {/* Manufacturing Excellence Section */}
       <section className="py-20 bg-muted/30">
         <div className="container mx-auto px-4">
@@ -365,68 +337,38 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Our Varieties Section */}
+      {/* Our Collections Section */}
       <section className="py-20 earth-gradient">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16 animate-fade-in-up">
             <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-4">
-              Our <span className="text-primary">Varieties</span>
+              Our <span className="text-primary">Collections</span>
             </h2>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-              Explore our diverse range of paper bags with custom sizes, colors, and finishes
+              Premium paperbags manufactured by EcoBagsFactory for leading brands
             </p>
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {varieties.map((variety, index) => (
+            {collections.map((collection, index) => (
               <Card
-                key={variety.id}
+                key={collection.id}
                 className="hover-lift overflow-hidden border-border/50 group"
                 style={{ animationDelay: `${index * 50}ms` }}
               >
-                <div className="relative h-64 overflow-hidden bg-secondary/30">
-                  <div className="relative w-full h-full p-4">
-                    <div className="relative w-full h-full overflow-hidden">
-                      <Image
-                        src={variety.image}
-                        alt={variety.alt}
-                        width={400}
-                        height={400}
-                        className="w-full h-[120%] object-contain group-hover:scale-105 transition-transform duration-300"
-                        style={{ marginTop: '-8%' }}
-                      />
-                    </div>
-                  </div>
+                <div className="relative h-72 overflow-hidden bg-secondary/30">
+                  <Image
+                    src={collection.image}
+                    alt={collection.alt}
+                    width={400}
+                    height={400}
+                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                  />
                 </div>
-                <CardContent className="pt-4 pb-6">
-                  <div className="space-y-2">
-                    <div className="flex items-center gap-2">
-                      <Package className="w-4 h-4 text-primary shrink-0" />
-                      <p className="text-sm font-semibold text-foreground">
-                        {variety.size}
-                      </p>
-                    </div>
-                    <div className="flex items-start gap-2">
-                      <div className="w-4 h-4 rounded-full bg-primary/20 shrink-0 mt-0.5" />
-                      <p className="text-sm text-muted-foreground">
-                        {variety.color}
-                      </p>
-                    </div>
-                    <div className="flex items-start gap-2">
-                      <div className="w-4 h-4 shrink-0 mt-0.5">
-                        <div className="w-full h-full border-2 border-primary/40 rounded" />
-                      </div>
-                      <p className="text-sm text-muted-foreground">
-                        {variety.handles}
-                      </p>
-                    </div>
-                    <div className="flex items-start gap-2">
-                      <Leaf className="w-4 h-4 text-primary shrink-0 mt-0.5" />
-                      <p className="text-sm text-muted-foreground font-medium">
-                        {variety.paper}
-                      </p>
-                    </div>
-                  </div>
+                <CardContent className="p-4">
+                  <h3 className="text-lg font-semibold text-foreground text-center">
+                    {collection.name}
+                  </h3>
                 </CardContent>
               </Card>
             ))}
@@ -540,6 +482,67 @@ export default function Home() {
                 "acceptedAnswer": {
                   "@type": "Answer",
                   "text": "At EcoBagsFactory, we offer flexible minimum order quantities for both plain and custom printed ecobags and paperbags. Whether you need 500 pieces of ecobags for a small business or 50,000+ paperbags for large retail chains, EcoBagsFactory can accommodate your bulk ecobags and paperbags order. Contact us for the best wholesale prices on ecobags and paperbags in India."
+                }
+              }
+            ]
+          })
+        }}
+      />
+
+      {/* Additional FAQ Schema targeting "Paperbags Manufacturer" keywords */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "What is EcoBagsFactory?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "EcoBagsFactory is a leading paperbags manufacturer in India, based in Hyderabad. We specialize in custom paper bags manufacturing, wholesale production, and eco-friendly packaging solutions. As a premier paperbags manufacturer, we serve businesses across India, UK, and USA."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Where is the paperbags manufacturer located?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "EcoBagsFactory paperbags manufacturing facility is located at Plot No. 91, Rajiv Gandhi Nagar, Kukatpally, Hyderabad - 500072, India. As a paperbags manufacturer in Hyderabad, we deliver paper bags across India, UK, and USA."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "What types of paper bags do you manufacture?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "As a comprehensive paperbags manufacturer, we produce kraft paper bags, white paper bags, custom printed bags, gift bags, shopping bags, and food packaging. All bags from our paper bags manufacturer facility are 100% recyclable and eco-friendly."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "What is the minimum order quantity for paperbags manufacturing?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Our minimum order quantity starts from 500 pieces for custom paper bags manufacturing. For wholesale paperbags manufacturing orders, we offer competitive bulk pricing. Contact our paperbags manufacturer team for detailed quotes."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Do you offer custom printing on paper bags?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Yes, as a professional paperbags manufacturer, we offer custom printing including logo printing, full-color printing, foil stamping, spot UV, and embossing on all paper bags. Our paper bags manufacturer facility has advanced printing capabilities."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "How to contact the paperbags manufacturer?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Contact EcoBagsFactory paperbags manufacturer at +91 9949826222 or email eco4bags@gmail.com. Visit our website ecobagsfactory.org for custom paper bags manufacturing quotes. We are the trusted paperbags manufacturer in Hyderabad, India."
                 }
               }
             ]

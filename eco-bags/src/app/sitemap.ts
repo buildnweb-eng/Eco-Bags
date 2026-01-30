@@ -25,9 +25,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     {
       url: `${baseUrl}/custom-orders`,
-      lastModified: new Date(),
+      lastModified: new Date('2025-01-30'),
       changeFrequency: 'weekly',
-      priority: 0.9,
+      priority: 0.95,
     },
     {
       url: `${baseUrl}/gallery`,
@@ -104,12 +104,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.9,
     },
 
-    // Manufacturer Page
+    // Manufacturer Page - Top Priority for "Paperbags Manufacturer" keywords
     {
       url: `${baseUrl}/paperbags-manufacturer`,
-      lastModified: new Date(),
+      lastModified: new Date('2025-01-30'),
       changeFrequency: 'weekly',
-      priority: 0.95,
+      priority: 1.0,
     },
 
     // Service Landing Pages

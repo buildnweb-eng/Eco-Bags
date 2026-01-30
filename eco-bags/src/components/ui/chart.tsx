@@ -13,6 +13,7 @@ type ChartPayloadItem = {
   color?: string;
   fill?: string;
   payload?: Record<string, unknown>;
+  graphicalItemId?: string;
   [key: string]: unknown;
 };
 

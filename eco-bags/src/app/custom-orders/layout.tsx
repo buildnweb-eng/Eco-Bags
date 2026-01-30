@@ -1,13 +1,24 @@
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Custom Orders - Personalized Eco-friendly Paper Bags",
-  description: "Order custom printed paper bags with your brand logo. Choose from various sizes, colors, handles, and finishes. Minimum order 500 bags. Get a quote today!",
-  keywords: ["custom paper bags", "personalized paper bags", "branded paper bags", "custom printed bags", "bulk paper bags order", "wholesale paper bags"],
+  title: "Custom Paper Bags Order - Paperbags Manufacturer India | EcoBagsFactory",
+  description: "Order custom paper bags from India's leading paperbags manufacturer. EcoBagsFactory offers custom paperbags manufacturing, printed bags, wholesale production. Get personalized eco-friendly bags from trusted paperbags manufacturer in Hyderabad.",
+  keywords: [
+    "custom paper bags order",
+    "custom paperbags manufacturer",
+    "paperbags manufacturer India",
+    "paperbags manufacturer Hyderabad",
+    "printed paperbags manufacturer",
+    "personalized paper bags",
+    "custom eco-friendly bags",
+    "wholesale paperbags order",
+    "bulk paper bags manufacturer",
+    "branded paper bags manufacturer"
+  ],
   openGraph: {
-    title: "Custom Orders - EcoBagsFactory",
-    description: "Create personalized eco-friendly paper bags for your business. Custom printing, sizes, and finishes available.",
-    images: ["/varieties/1.png"],
+    title: "Custom Paper Bags - Paperbags Manufacturer India | EcoBagsFactory",
+    description: "Order custom paper bags from India's leading paperbags manufacturer. Custom printing, wholesale orders, bulk production.",
+    images: ["/hero-bags.jpg"],
   },
 };
 
@@ -18,4 +29,3 @@ export default function CustomOrdersLayout({
 }) {
   return <>{children}</>;
 }
-

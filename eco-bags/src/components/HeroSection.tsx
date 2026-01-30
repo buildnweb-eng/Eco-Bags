@@ -25,7 +25,7 @@ const HeroSection = () => {
             </h1>
             
             <p className="text-xl text-muted-foreground max-w-lg">
-              Leading Paperbags Manufacturer in India. Sustainable, stylish, and customizable paper bags manufacturing for your business. Trusted paperbags manufacturer since 2010.
+              Leading Paperbags Manufacturer in India. Sustainable, stylish, and customizable paper bags manufacturing for your business. Trusted paperbags manufacturer.
             </p>
             
             {/* Contact Info */}

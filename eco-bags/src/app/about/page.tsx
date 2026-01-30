@@ -5,13 +5,24 @@ import Image from "next/image";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "About Us - Leading Eco-friendly Paper Bags Manufacturer",
-  description: "Learn about EcoBagsFactory's commitment to sustainability. 10M+ bags produced, 5000+ happy clients. Leading manufacturer of eco-friendly paper bags in Hyderabad since inception.",
-  keywords: ["about EcoBagsFactory", "sustainable packaging company", "eco-friendly manufacturer", "paper bags company Hyderabad", "green packaging solutions"],
+  title: "About EcoBagsFactory - Leading Paperbags Manufacturer India | Our Story",
+  description: "About EcoBagsFactory - Premier paperbags manufacturer in India since 2010. 10M+ bags produced, 5000+ happy clients. Leading paper bags manufacturer in Hyderabad offering custom manufacturing, wholesale production. Trusted ecobags manufacturer with 100% recyclable bags.",
+  keywords: [
+    "about EcoBagsFactory",
+    "paperbags manufacturer India",
+    "paperbags manufacturer Hyderabad",
+    "paper bags manufacturer",
+    "ecobags manufacturer",
+    "sustainable packaging company",
+    "eco-friendly manufacturer",
+    "paper bags company Hyderabad",
+    "custom paperbags manufacturer",
+    "wholesale paper bags manufacturer"
+  ],
   openGraph: {
-    title: "About EcoBagsFactory - Our Sustainable Mission",
-    description: "10M+ bags produced, 5000+ happy clients. Leading the way in sustainable packaging solutions in Hyderabad.",
-    images: ["/about-image.jpg"],
+    title: "About EcoBagsFactory - Leading Paperbags Manufacturer India",
+    description: "Premier paperbags manufacturer since 2010. 10M+ bags produced, 5000+ clients. Leading paper bags manufacturer in Hyderabad.",
+    images: ["/factory/factory-enhanced-1.1.jpeg"],
   },
 };
 

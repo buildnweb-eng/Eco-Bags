@@ -1,26 +1,35 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { ShoppingBag, Check } from "lucide-react";
+import { ShoppingBag, Check, Package, Leaf } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "EcoBagsFactory Products | ecobags paperbags Hyderabad - Custom Paper Bags Manufacturer India",
-  description: "EcoBagsFactory ecobags paperbags manufacturer Hyderabad - Browse our premium collection of custom printed ecobags, kraft paperbags, wholesale paper bags. Buy ecobags hyd India. Real client projects showcase.",
-  keywords: ["ecobags", "paperbags", "EcoBagsFactory", "ecobags hyd", "paper bags Hyderabad", "ecobags manufacturer", "paperbags manufacturer", "custom printed bags", "kraft paper bags", "wholesale paper bags", "ecobags India", "paperbags supplier", "buy ecobags online", "paper bags wholesale"],
+  title: "EcoBagsFactory Products | Paperbags Manufacturer India | Paper Bags Catalog Hyderabad",
+  description: "EcoBagsFactory paperbags manufacturer products - Browse premium paper bags from India's leading paperbags manufacturer. Custom printed bags, kraft paperbags, wholesale paper bags. Trusted paperbags manufacturer in Hyderabad serving India, UK, USA.",
+  keywords: [
+    "EcoBagsFactory products",
+    "paperbags manufacturer products",
+    "paperbags manufacturer India catalog",
+    "paper bags manufacturer Hyderabad",
+    "paperbags manufacturer",
+    "paperbags manufacturer India",
+    "paperbags manufacturer Hyderabad",
+    "ecobags manufacturer",
+    "custom printed bags manufacturer",
+    "kraft paper bags manufacturer",
+    "wholesale paper bags manufacturer",
+    "paper bags Hyderabad",
+    "ecobags hyd",
+    "paperbags supplier India",
+    "bulk paper bags manufacturer"
+  ],
   openGraph: {
-    title: "EcoBagsFactory Products - ecobags paperbags Manufacturer Hyderabad",
-    description: "Premium ecobags and paperbags manufacturer in Hyderabad. Custom printed paper bags for brands across India. View our real client projects.",
+    title: "EcoBagsFactory Products - Paperbags Manufacturer India | Paper Bags Catalog",
+    description: "Premium paper bags from India's leading paperbags manufacturer. Custom printed bags, kraft paperbags, wholesale orders. Paperbags manufacturer in Hyderabad.",
     images: ["/product-1.jpg"],
   },
-};
-
-type Collection = {
-  name: string;
-  image: string;
-  alt: string;
-  specs?: string;
 };
 
 export default function Products() {
@@ -57,59 +66,156 @@ export default function Products() {
   return (
     <div className="pt-16 pb-20">
       <div className="container mx-auto px-4">
-        {/* Our Collections - Real Projects Gallery */}
+        {/* Our Varieties - Paper Bags Gallery */}
         <div className="mb-16">
           <div className="text-center mb-8">
             <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-4">
-              Our <span className="text-primary">Collections</span>
+              Our <span className="text-primary">Varieties</span>
             </h2>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-              Premium   paperbags manufactured by EcoBagsFactory
+              Explore our diverse range of paper bags with custom sizes, colors, and finishes
             </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
             {[
-              { name: "Neerus Collection", image: "/Collections/Neerus.jpeg", alt: "Neerus custom printed ecobags paperbags EcoBagsFactory manufacturer Hyderabad - premium paper bags hyd India" },
-              { name: "Almond House Collection", image: "/Collections/Almond-house.jpeg", alt: "Almond House branded ecobags paperbags EcoBagsFactory - custom paper bags manufacturer Hyderabad India" },
-              { name: "Ramraj Collection", image: "/Collections/Ramraj.jpeg", alt: "Ramraj Cotton ecobags paperbags EcoBagsFactory - wholesale paper bags manufacturer Hyderabad hyd" },
-              { name: "Pulla Reddy Sweets Collection", image: "/Collections/Pulla-reddy-sweets.jpeg", alt: "Pulla Reddy Sweets ecobags paperbags EcoBagsFactory - custom branded paper bags Hyderabad India" },
-              { name: "Cafe Niloufer Collection", image: "/Collections/Cafe-niloufer.jpeg", alt: "Cafe Niloufer ecobags paperbags EcoBagsFactory - eco friendly paper bags manufacturer hyd Hyderabad" },
-              { name: "Brand Dot Collection", image: "/Collections/Brand-dot.jpeg", alt: "Brand Dot custom ecobags paperbags EcoBagsFactory - printed paper bags manufacturer Hyderabad India" },
-              { name: "Saravana Collection", image: "/Collections/Saravana.jpeg", alt: "Saravana ecobags paperbags EcoBagsFactory - bulk paper bags manufacturer supplier Hyderabad hyd India" },
-              { name: "Cherrys Collection", image: "/Collections/Cherrys.jpeg", alt: "Cherrys custom ecobags paperbags EcoBagsFactory - premium paper bags manufacturer Hyderabad India" },
-              { name: "Chennai Jewellers Collection", image: "/Collections/chennai-jewllers.jpeg", alt: "Chennai Jewellers luxury ecobags paperbags EcoBagsFactory - premium paper bags manufacturer Hyderabad India" },
-              { name: "Neeraj Collection", image: "/Collections/neeraj.jpeg", alt: "Neeraj custom branded ecobags paperbags EcoBagsFactory - paper bags manufacturer Hyderabad hyd India" },
-              { name: "Tanika Collection", image: "/Collections/Tanika.jpeg", alt: "Tanika fashion ecobags paperbags EcoBagsFactory - custom printed paper bags manufacturer Hyderabad India" },
-              { name: "Tyohaar Collection", image: "/Collections/Tyohaar.jpeg", alt: "Tyohaar festive ecobags paperbags EcoBagsFactory - custom paper bags manufacturer Hyderabad hyd India" },
-              { name: "Paper Bags Collection", image: "/Collections/bags.jpeg", alt: "EcoBagsFactory ecobags paperbags collection - wholesale paper bags manufacturer supplier Hyderabad hyd India" },
-              { name: "Top Chop", image: "/Collections/Top-chop.jpeg", alt: "Top Chop ecobags paperbags EcoBagsFactory - 10x12x7.5 inch 140 GSM single colour print paper handles Hyderabad", specs: "10×12×7.5 | 140 GSM | Single Colour" },
-              { name: "Golden Shade Brown", image: "/Collections/Golden-shade-brown.jpeg", alt: "Golden Shade Brown ecobags paperbags EcoBagsFactory - 12x11x4 inch 140 GSM paper handles manufacturer Hyderabad", specs: "12×11×4 | 140 GSM" },
-              { name: "Khaba", image: "/Collections/khabab.jpeg", alt: "Khaba ecobags paperbags EcoBagsFactory - 12x13.5x12 inch 160 GSM white viva linear multi colour print paper handles Hyderabad", specs: "12×13.5×12 | 160 GSM | Multi Colour" },
-            ].map((collection, index) => (
+              { id: 1, image: "/varieties/1.png", size: "9x8x8 inch", color: "Two Colour", handles: "Thread Handles", paper: "Brown 140 GSM", alt: "9x8x8 inch eco-friendly paper bags ecobags kraft paperbags with thread handles - Brown 140 GSM eco bags manufacturer" },
+              { id: 2, image: "/varieties/2.png", size: "12x8x3.5 inch", color: "Multi Colour", handles: "Thread Handles", paper: "Spot UV Coating", alt: "12x8x3.5 inch custom printed paper bags ecobags with Spot UV coating - personalized paperbags eco bags India" },
+              { id: 3, image: "/varieties/3.png", size: "6x6x4 inch", color: "Multi Colour", handles: "Thread Handles", paper: "Cyber XL 220 GSM Gloss Lamination", alt: "6x6x4 inch premium paper bags ecobags with gloss lamination - luxury paperbags eco bags gift bags India" },
+              { id: 4, image: "/varieties/4.png", size: "14x10x4 inch", color: "Multi Colour", handles: "Special Handles", paper: "Cyber XL 250 GSM Matt Lamination", alt: "14x10x4 inch luxury paper bags ecobags with matt lamination - premium paperbags eco bags shopping bags wholesale" },
+              { id: 5, image: "/varieties/5.png", size: "15x12x4 inch", color: "Multi Colour", handles: "Satin Ribbon", paper: "Cyber XL 270 GSM", alt: "15x12x4 inch premium gift bags ecobags with satin ribbon - luxury paper bags paperbags eco bags India" },
+              { id: 6, image: "/varieties/6.png", size: "17x12x5 inch", color: "Multi Colour", handles: "Thread Handles", paper: "Cyber XL 300 GSM Gold Foiling", alt: "17x12x5 inch luxury paper bags ecobags with gold foiling - premium paperbags eco bags shopping bags manufacturer" },
+              { id: 7, image: "/varieties/7.png", size: "15.25x18.65x4 inch", color: "Multi Colour", handles: "Paper Handles", paper: "Viva Linear 160 GSM", alt: "15.25x18.65x4 inch eco-friendly shopping bags ecobags with paper handles - sustainable paperbags eco bags bulk wholesale" },
+              { id: 8, image: "/varieties/8.png", size: "12x16x4 inch", color: "Two Colour", handles: "Paper Handles", paper: "White 160 GSM", alt: "12x16x4 inch white paper bags ecobags with paper handles - 160 GSM sustainable paperbags eco bags packaging India" },
+            ].map((variety, index) => (
               <Card
-                key={collection.name}
+                key={variety.id}
                 className="hover-lift overflow-hidden border-border/50 group"
                 style={{ animationDelay: `${index * 50}ms` }}
               >
-                <div className="relative h-72 overflow-hidden bg-secondary/30">
+                <div className="relative h-64 overflow-hidden bg-secondary/30">
+                  <div className="relative w-full h-full p-4">
+                    <div className="relative w-full h-full overflow-hidden">
+                      <Image
+                        src={variety.image}
+                        alt={variety.alt}
+                        width={400}
+                        height={400}
+                        className="w-full h-[120%] object-contain group-hover:scale-105 transition-transform duration-300"
+                        style={{ marginTop: '-8%' }}
+                      />
+                    </div>
+                  </div>
+                </div>
+                <CardContent className="pt-4 pb-6">
+                  <div className="space-y-2">
+                    <div className="flex items-center gap-2">
+                      <Package className="w-4 h-4 text-primary shrink-0" aria-hidden="true" />
+                      <p className="text-sm font-semibold text-foreground">
+                        {variety.size}
+                      </p>
+                    </div>
+                    <div className="flex items-start gap-2">
+                      <div className="w-4 h-4 rounded-full bg-primary/20 shrink-0 mt-0.5" aria-hidden="true" />
+                      <p className="text-sm text-muted-foreground">
+                        {variety.color}
+                      </p>
+                    </div>
+                    <div className="flex items-start gap-2">
+                      <div className="w-4 h-4 shrink-0 mt-0.5" aria-hidden="true">
+                        <div className="w-full h-full border-2 border-primary/40 rounded" />
+                      </div>
+                      <p className="text-sm text-muted-foreground">
+                        {variety.handles}
+                      </p>
+                    </div>
+                    <div className="flex items-start gap-2">
+                      <Leaf className="w-4 h-4 text-primary shrink-0 mt-0.5" aria-hidden="true" />
+                      <p className="text-sm text-muted-foreground font-medium">
+                        {variety.paper}
+                      </p>
+                    </div>
+                  </div>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
+        </div>
+
+        {/* Sweet Boxes & Food Packaging Section */}
+        <div className="mb-16">
+          <div className="text-center mb-8">
+            <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-4">
+              Sweet Boxes & <span className="text-primary">Food Packaging</span>
+            </h2>
+            <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
+              Premium quality food-grade packaging for sweets, cakes, and more
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+            {[
+              { id: 1, name: "Boat Trays", capacity: "500ml", size: "5L x 3.5W x 1.5H", paper: "240 GSM", image: "/Sweetboxes-and-other/1.jpeg", alt: "Boat trays 500ml food packaging - 240 GSM paper EcoBagsFactory Hyderabad" },
+              { id: 2, name: "Cookies/Brownie Box", capacity: "", size: "3.5L x 3.5W x 2H", paper: "", image: "/Sweetboxes-and-other/2.jpeg", alt: "Cookies brownie box food packaging EcoBagsFactory Hyderabad" },
+              { id: 3, name: "Window Pastry Box", capacity: "", size: "5L x 5W x 4.5H", paper: "220 GSM", image: "/Sweetboxes-and-other/3.jpeg", alt: "Window pastry box 220 GSM food packaging EcoBagsFactory Hyderabad" },
+              { id: 4, name: "Sweet Box - Small", capacity: "250 gms", size: "5.75L x 3.75W x 1.5H", paper: "220 GSM", image: "/Sweetboxes-and-other/4.jpeg", alt: "Sweet box small 250 gms 220 GSM EcoBagsFactory Hyderabad" },
+              { id: 5, name: "Sweet Box - Medium", capacity: "500 gms", size: "6.75L x 5W x 1.5H", paper: "220 GSM", image: "/Sweetboxes-and-other/5.jpeg", alt: "Sweet box medium 500 gms 220 GSM EcoBagsFactory Hyderabad" },
+              { id: 6, name: "Sweet Box - Large", capacity: "1 kg", size: "10L x 6.75W x 1.5H", paper: "220 GSM", image: "/Sweetboxes-and-other/6.jpeg", alt: "Sweet box large 1kg 220 GSM EcoBagsFactory Hyderabad" },
+              { id: 7, name: "Sweet Box - 250 gms", capacity: "250 gms", size: "6.5L x 4.75W x 1.5H", paper: "220 GSM", image: "/Sweetboxes-and-other/7.jpeg", alt: "Sweet box 250 gms 220 GSM paper quality EcoBagsFactory Hyderabad" },
+              { id: 8, name: "Sweet Box - 500 gms", capacity: "500 gms", size: "9L x 7W x 1.5H", paper: "220 GSM", image: "/Sweetboxes-and-other/8.jpeg", alt: "Sweet box 500 gms medium 220 GSM EcoBagsFactory Hyderabad" },
+              { id: 9, name: "Small Shawarma Box", capacity: "", size: "7L x 3W", paper: "240 GSM", image: "/Sweetboxes-and-other/9.jpeg", alt: "Small shawarma box 240 GSM paper EcoBagsFactory Hyderabad" },
+              { id: 10, name: "Big Shawarma Box", capacity: "", size: "8L x 3.5W", paper: "240 GSM", image: "/Sweetboxes-and-other/10.jpeg", alt: "Big shawarma box 240 GSM paper EcoBagsFactory Hyderabad" },
+              { id: 11, name: "Cake Box - Small", capacity: "", size: "7L x 5W x 3H", paper: "250 GSM", image: "/Sweetboxes-and-other/11.jpeg", alt: "Cake box small 250 GSM EcoBagsFactory Hyderabad" },
+              { id: 12, name: "Cake Box - Medium", capacity: "", size: "10L x 10W x 5H", paper: "250 GSM", image: "/Sweetboxes-and-other/12.jpeg", alt: "Cake box medium 250 GSM EcoBagsFactory Hyderabad" },
+              { id: 13, name: "Cake Box - Large", capacity: "", size: "12L x 12W x 5H", paper: "270 GSM", image: "/Sweetboxes-and-other/13.jpeg", alt: "Cake box large 270 GSM EcoBagsFactory Hyderabad" },
+              { id: 14, name: "Sweet Boxes Collection", capacity: "", size: "", paper: "", image: "/Sweetboxes-and-other/14.jpeg", alt: "Sweet boxes collection food packaging EcoBagsFactory Hyderabad" },
+              { id: 15, name: "Food Packaging Range", capacity: "", size: "", paper: "", image: "/Sweetboxes-and-other/15.jpeg", alt: "Food packaging range sweet boxes EcoBagsFactory Hyderabad" },
+              { id: 16, name: "Packaging Varieties", capacity: "", size: "", paper: "", image: "/Sweetboxes-and-other/16.jpeg", alt: "Packaging varieties sweet boxes cake boxes EcoBagsFactory Hyderabad" },
+            ].map((item, index) => (
+              <Card
+                key={item.id}
+                className="hover-lift overflow-hidden border-border/50 group"
+                style={{ animationDelay: `${index * 50}ms` }}
+              >
+                <div className="relative h-64 overflow-hidden bg-secondary/30">
                   <Image
-                    src={collection.image}
-                    alt={collection.alt}
+                    src={item.image}
+                    alt={item.alt}
                     width={400}
                     height={400}
                     className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                   />
                 </div>
-                <CardContent className="p-4">
-                  <h3 className="text-lg font-semibold text-foreground text-center">
-                    {collection.name}
+                <CardContent className="pt-4 pb-6">
+                  <h3 className="text-lg font-semibold text-foreground mb-2">
+                    {item.name}
                   </h3>
-                  {collection.specs && (
-                    <p className="text-sm text-muted-foreground text-center mt-2">
-                      {collection.specs}
-                    </p>
-                  )}
+                  <div className="space-y-1">
+                    {item.size && (
+                      <div className="flex items-center gap-2">
+                        <Package className="w-4 h-4 text-primary shrink-0" aria-hidden="true" />
+                        <p className="text-sm text-muted-foreground">
+                          {item.size}
+                        </p>
+                      </div>
+                    )}
+                    {item.capacity && (
+                      <div className="flex items-center gap-2">
+                        <div className="w-4 h-4 rounded-full bg-primary/20 shrink-0" aria-hidden="true" />
+                        <p className="text-sm text-muted-foreground">
+                          {item.capacity}
+                        </p>
+                      </div>
+                    )}
+                    {item.paper && (
+                      <div className="flex items-center gap-2">
+                        <Leaf className="w-4 h-4 text-primary shrink-0" aria-hidden="true" />
+                        <p className="text-sm text-muted-foreground font-medium">
+                          {item.paper}
+                        </p>
+                      </div>
+                    )}
+                  </div>
                 </CardContent>
               </Card>
             ))}

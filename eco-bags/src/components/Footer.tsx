@@ -146,68 +146,19 @@ const Footer = () => {
                 </Link>
               </li>
               <li>
-                <Link
-                  href="/paper-bags-kukatpally"
-                  className="text-sm text-muted-foreground hover:text-primary transition-colors"
-                >
-                  Kukatpally
-                </Link>
+                <span className="text-sm text-muted-foreground">
+                  All over India
+                </span>
               </li>
               <li>
-                <Link
-                  href="/eco-bags-secunderabad"
-                  className="text-sm text-muted-foreground hover:text-primary transition-colors"
-                >
-                  Secunderabad
-                </Link>
+                <span className="text-sm text-muted-foreground">
+                  USA
+                </span>
               </li>
               <li>
-                <Link
-                  href="/paper-bags-banjara-hills"
-                  className="text-sm text-muted-foreground hover:text-primary transition-colors"
-                >
-                  Banjara Hills
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/eco-bags-madhapur"
-                  className="text-sm text-muted-foreground hover:text-primary transition-colors"
-                >
-                  Madhapur
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/paper-bags-gachibowli"
-                  className="text-sm text-muted-foreground hover:text-primary transition-colors"
-                >
-                  Gachibowli
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/eco-bags-jubilee-hills"
-                  className="text-sm text-muted-foreground hover:text-primary transition-colors"
-                >
-                  Jubilee Hills
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/paper-bags-kondapur"
-                  className="text-sm text-muted-foreground hover:text-primary transition-colors"
-                >
-                  Kondapur
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/eco-bags-ameerpet"
-                  className="text-sm text-muted-foreground hover:text-primary transition-colors"
-                >
-                  Ameerpet
-                </Link>
+                <span className="text-sm text-muted-foreground">
+                  UK
+                </span>
               </li>
             </ul>
           </div>

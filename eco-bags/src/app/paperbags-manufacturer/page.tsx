@@ -86,11 +86,71 @@ export default function PaperbagsManufacturer() {
     }
   };
 
+  // FAQ Schema for Paperbags Manufacturer Page
+  const manufacturerFaqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Why choose EcoBagsFactory as your paperbags manufacturer?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "EcoBagsFactory is India's trusted paperbags manufacturer since 2010 with 10M+ bags produced. We offer competitive pricing, fast delivery, ISO quality standards, and 100% eco-friendly manufacturing. As a leading paper bags manufacturer in Hyderabad, we serve clients across India, UK, and USA."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What GSM paper does the paperbags manufacturer use?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "As a professional paperbags manufacturer, we use 140 GSM to 300 GSM paper based on requirements. Standard shopping bags use 160-200 GSM, while premium bags use 220-300 GSM kraft paper. Our paper bags manufacturer facility ensures consistent quality across all GSM ranges."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Does the paperbags manufacturer offer wholesale pricing?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes, EcoBagsFactory offers wholesale paperbags manufacturing with bulk discounts. Contact our paperbags manufacturer team for wholesale pricing on custom paper bags manufacturing orders above 5000 pieces. We are the preferred paper bags manufacturer for wholesale orders in India."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is the delivery time for paperbags manufacturing orders?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Our paperbags manufacturer facility typically delivers orders within 7-14 days depending on quantity and customization. As a paper bags manufacturer in Hyderabad, we offer express delivery options for urgent manufacturing orders across India."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can the paperbags manufacturer handle large bulk orders?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Absolutely! As a leading paperbags manufacturer in India, EcoBagsFactory has the capacity to handle orders from 500 pieces to 100,000+ pieces. Our paper bags manufacturer facility is equipped with high-speed production lines for large-scale manufacturing."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What certifications does the paperbags manufacturer have?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "EcoBagsFactory paperbags manufacturer facility maintains ISO quality standards and uses FSC-certified paper. As a responsible paper bags manufacturer, all our products are 100% recyclable and biodegradable, meeting international eco-friendly packaging standards."
+        }
+      }
+    ]
+  };
+
   return (
     <div className="pt-16 pb-20">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(manufacturerSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(manufacturerFaqSchema) }}
       />
 
       {/* Hero Section */}
