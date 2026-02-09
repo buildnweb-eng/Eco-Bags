@@ -155,22 +155,22 @@ export default function Products() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
             {[
-              { id: 1, name: "Boat Trays", capacity: "500ml", size: "5L x 3.5W x 1.5H", paper: "240 GSM", image: "/Sweetboxes-and-other/1.jpeg", alt: "Boat trays 500ml food packaging - 240 GSM paper EcoBagsFactory Hyderabad" },
-              { id: 2, name: "Cookies/Brownie Box", capacity: "", size: "3.5L x 3.5W x 2H", paper: "", image: "/Sweetboxes-and-other/2.jpeg", alt: "Cookies brownie box food packaging EcoBagsFactory Hyderabad" },
-              { id: 3, name: "Window Pastry Box", capacity: "", size: "5L x 5W x 4.5H", paper: "220 GSM", image: "/Sweetboxes-and-other/3.jpeg", alt: "Window pastry box 220 GSM food packaging EcoBagsFactory Hyderabad" },
-              { id: 4, name: "Sweet Box - Small", capacity: "250 gms", size: "5.75L x 3.75W x 1.5H", paper: "220 GSM", image: "/Sweetboxes-and-other/4.jpeg", alt: "Sweet box small 250 gms 220 GSM EcoBagsFactory Hyderabad" },
-              { id: 5, name: "Sweet Box - Medium", capacity: "500 gms", size: "6.75L x 5W x 1.5H", paper: "220 GSM", image: "/Sweetboxes-and-other/5.jpeg", alt: "Sweet box medium 500 gms 220 GSM EcoBagsFactory Hyderabad" },
-              { id: 6, name: "Sweet Box - Large", capacity: "1 kg", size: "10L x 6.75W x 1.5H", paper: "220 GSM", image: "/Sweetboxes-and-other/6.jpeg", alt: "Sweet box large 1kg 220 GSM EcoBagsFactory Hyderabad" },
-              { id: 7, name: "Sweet Box - 250 gms", capacity: "250 gms", size: "6.5L x 4.75W x 1.5H", paper: "220 GSM", image: "/Sweetboxes-and-other/7.jpeg", alt: "Sweet box 250 gms 220 GSM paper quality EcoBagsFactory Hyderabad" },
-              { id: 8, name: "Sweet Box - 500 gms", capacity: "500 gms", size: "9L x 7W x 1.5H", paper: "220 GSM", image: "/Sweetboxes-and-other/8.jpeg", alt: "Sweet box 500 gms medium 220 GSM EcoBagsFactory Hyderabad" },
-              { id: 9, name: "Small Shawarma Box", capacity: "", size: "7L x 3W", paper: "240 GSM", image: "/Sweetboxes-and-other/9.jpeg", alt: "Small shawarma box 240 GSM paper EcoBagsFactory Hyderabad" },
-              { id: 10, name: "Big Shawarma Box", capacity: "", size: "8L x 3.5W", paper: "240 GSM", image: "/Sweetboxes-and-other/10.jpeg", alt: "Big shawarma box 240 GSM paper EcoBagsFactory Hyderabad" },
-              { id: 11, name: "Cake Box - Small", capacity: "", size: "7L x 5W x 3H", paper: "250 GSM", image: "/Sweetboxes-and-other/11.jpeg", alt: "Cake box small 250 GSM EcoBagsFactory Hyderabad" },
-              { id: 12, name: "Cake Box - Medium", capacity: "", size: "10L x 10W x 5H", paper: "250 GSM", image: "/Sweetboxes-and-other/12.jpeg", alt: "Cake box medium 250 GSM EcoBagsFactory Hyderabad" },
-              { id: 13, name: "Cake Box - Large", capacity: "", size: "12L x 12W x 5H", paper: "270 GSM", image: "/Sweetboxes-and-other/13.jpeg", alt: "Cake box large 270 GSM EcoBagsFactory Hyderabad" },
-              { id: 14, name: "Sweet Boxes Collection", capacity: "", size: "", paper: "", image: "/Sweetboxes-and-other/14.jpeg", alt: "Sweet boxes collection food packaging EcoBagsFactory Hyderabad" },
-              { id: 15, name: "Food Packaging Range", capacity: "", size: "", paper: "", image: "/Sweetboxes-and-other/15.jpeg", alt: "Food packaging range sweet boxes EcoBagsFactory Hyderabad" },
-              { id: 16, name: "Packaging Varieties", capacity: "", size: "", paper: "", image: "/Sweetboxes-and-other/16.jpeg", alt: "Packaging varieties sweet boxes cake boxes EcoBagsFactory Hyderabad" },
+              { id: 1, name: "Boat Trays", capacity: "500ml", size: "5L x 3.5W x 1.5H", paper: "240 GSM", image: "/Sweetboxes-and-other/1-removebg-preview.png", alt: "Boat trays 500ml food packaging - 240 GSM paper EcoBagsFactory Hyderabad" },
+              { id: 2, name: "Cookies/Brownie Box", capacity: "", size: "3.5L x 3.5W x 2H", paper: "", image: "/Sweetboxes-and-other/2-removebg-preview.png", alt: "Cookies brownie box food packaging EcoBagsFactory Hyderabad" },
+              { id: 3, name: "Window Pastry Box", capacity: "", size: "5L x 5W x 4.5H", paper: "220 GSM", image: "/Sweetboxes-and-other/3-removebg-preview.png", alt: "Window pastry box 220 GSM food packaging EcoBagsFactory Hyderabad" },
+              { id: 4, name: "Sweet Box - Small", capacity: "250 gms", size: "5.75L x 3.75W x 1.5H", paper: "220 GSM", image: "/Sweetboxes-and-other/4-removebg-preview.png", alt: "Sweet box small 250 gms 220 GSM EcoBagsFactory Hyderabad" },
+              { id: 5, name: "Sweet Box - Medium", capacity: "500 gms", size: "6.75L x 5W x 1.5H", paper: "220 GSM", image: "/Sweetboxes-and-other/5-removebg-preview.png", alt: "Sweet box medium 500 gms 220 GSM EcoBagsFactory Hyderabad" },
+              { id: 6, name: "Sweet Box - Large", capacity: "1 kg", size: "10L x 6.75W x 1.5H", paper: "220 GSM", image: "/Sweetboxes-and-other/6-removebg-preview.png", alt: "Sweet box large 1kg 220 GSM EcoBagsFactory Hyderabad" },
+              { id: 7, name: "Sweet Box - 250 gms", capacity: "250 gms", size: "6.5L x 4.75W x 1.5H", paper: "220 GSM", image: "/Sweetboxes-and-other/7-removebg-preview.png", alt: "Sweet box 250 gms 220 GSM paper quality EcoBagsFactory Hyderabad" },
+              { id: 8, name: "Sweet Box - 500 gms", capacity: "500 gms", size: "9L x 7W x 1.5H", paper: "220 GSM", image: "/Sweetboxes-and-other/8-removebg-preview.png", alt: "Sweet box 500 gms medium 220 GSM EcoBagsFactory Hyderabad" },
+              { id: 9, name: "Small Shawarma Box", capacity: "", size: "7L x 3W", paper: "240 GSM", image: "/Sweetboxes-and-other/9-removebg-preview.png", alt: "Small shawarma box 240 GSM paper EcoBagsFactory Hyderabad" },
+              { id: 10, name: "Big Shawarma Box", capacity: "", size: "8L x 3.5W", paper: "240 GSM", image: "/Sweetboxes-and-other/10-removebg-preview.png", alt: "Big shawarma box 240 GSM paper EcoBagsFactory Hyderabad" },
+              { id: 11, name: "Cake Box - Small", capacity: "", size: "7L x 5W x 3H", paper: "250 GSM", image: "/Sweetboxes-and-other/11-removebg-preview.png", alt: "Cake box small 250 GSM EcoBagsFactory Hyderabad" },
+              { id: 12, name: "Cake Box - Medium", capacity: "", size: "10L x 10W x 5H", paper: "250 GSM", image: "/Sweetboxes-and-other/12-removebg-preview.png", alt: "Cake box medium 250 GSM EcoBagsFactory Hyderabad" },
+              { id: 13, name: "Cake Box - Large", capacity: "", size: "12L x 12W x 5H", paper: "270 GSM", image: "/Sweetboxes-and-other/13-removebg-preview.png", alt: "Cake box large 270 GSM EcoBagsFactory Hyderabad" },
+              { id: 14, name: "Sweet Boxes Collection", capacity: "", size: "", paper: "", image: "/Sweetboxes-and-other/14-removebg-preview.png", alt: "Sweet boxes collection food packaging EcoBagsFactory Hyderabad" },
+              { id: 15, name: "Food Packaging Range", capacity: "", size: "", paper: "", image: "/Sweetboxes-and-other/15-removebg-preview.png", alt: "Food packaging range sweet boxes EcoBagsFactory Hyderabad" },
+              { id: 16, name: "Packaging Varieties", capacity: "", size: "", paper: "", image: "/Sweetboxes-and-other/16-removebg-preview.png", alt: "Packaging varieties sweet boxes cake boxes EcoBagsFactory Hyderabad" },
             ].map((item, index) => (
               <Card
                 key={item.id}
