@@ -8,7 +8,7 @@ import { Phone, CheckCircle, GraduationCap, Building } from "lucide-react";
 export const metadata: Metadata = {
   title: "Paper Bags Gachibowli | Eco Bags Financial District | EcoBagsFactory",
   description: "Paper bags for Gachibowli and Financial District businesses. EcoBagsFactory delivers eco-friendly bags to universities, tech parks, and corporate offices. Call +91 9949826222.",
-  keywords: ["paper bags gachibowli", "eco bags financial district", "paper bags nanakramguda", "eco-friendly bags gachibowli", "corporate paper bags hyderabad"],
+  keywords: ["paper bags gachibowli", "eco bags financial district", "paper bags nanakramguda", "eco-friendly bags gachibowli", "corporate paper bags hyderabad", "paper bag manufacturer gachibowli"],
   openGraph: {
     title: "Paper Bags Gachibowli & Financial District - EcoBagsFactory",
     description: "Eco-friendly paper bags for Gachibowli's business and education hub.",

@@ -107,7 +107,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     // Manufacturer Page - Top Priority for "Paperbags Manufacturer" keywords
     {
       url: `${baseUrl}/paperbags-manufacturer`,
-      lastModified: new Date('2025-01-30'),
+      lastModified: new Date(),
       changeFrequency: 'weekly',
       priority: 1.0,
     },

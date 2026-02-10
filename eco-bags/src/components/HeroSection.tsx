@@ -20,12 +20,12 @@ const HeroSection = () => {
             </div>
             
             <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-foreground leading-tight">
-              <span className="block">Eco-Friendly Paper</span>
-              <span className="block whitespace-nowrap">Bags <span className="text-primary">Manufacturer</span></span>
+              <span className="block">Paper Bag</span>
+              <span className="block whitespace-nowrap"><span className="text-primary">Manufacturer</span> Hyderabad</span>
             </h1>
             
             <p className="text-xl text-muted-foreground max-w-lg">
-              Leading Paperbags Manufacturer in India. Sustainable, stylish, and customizable paper bags manufacturing for your business. Trusted paperbags manufacturer.
+              Leading paper bag manufacturer in Hyderabad, India. EcoBagsFactory - trusted paperbags manufacturer and paper bag manufacturers offering sustainable, stylish, and customizable paper bags manufacturing for your business.
             </p>
             
             {/* Contact Info */}
@@ -70,7 +70,7 @@ const HeroSection = () => {
             <div className="absolute inset-0 bg-primary/20 rounded-3xl blur-3xl" />
             <Image
               src="/hero-bags.jpg"
-              alt="EcoBagsFactory - Leading Paperbags Manufacturer India | Premium Paper Bags Manufacturer Hyderabad | Custom Paperbags Manufacturing - Wholesale Ecobags Manufacturer - 100% Recyclable Biodegradable Sustainable Packaging"
+              alt="Paper Bag Manufacturer Hyderabad - EcoBagsFactory | Leading Paper Bag Manufacturers India | Paperbags Manufacturer | Premium Paper Bags Manufacturer | Custom Paperbags Manufacturing - Wholesale Ecobags Manufacturer - 100% Recyclable Biodegradable Sustainable Packaging"
               width={800}
               height={600}
               className="relative rounded-3xl shadow-2xl w-full h-auto"

@@ -8,7 +8,7 @@ import { MapPin, Phone, CheckCircle, Leaf, Truck, Factory } from "lucide-react";
 export const metadata: Metadata = {
   title: "Paper Bags Kukatpally | Eco-Friendly Bags | EcoBagsFactory",
   description: "Premium paper bags manufacturer in Kukatpally, Hyderabad. EcoBagsFactory offers custom printed eco-friendly bags with same-day pickup available. Located in Rajiv Gandhi Nagar, Kukatpally.",
-  keywords: ["paper bags kukatpally", "eco bags kukatpally", "paper bags manufacturer kukatpally", "eco-friendly bags kukatpally hyderabad", "custom paper bags kukatpally"],
+  keywords: ["paper bags kukatpally", "eco bags kukatpally", "paper bags manufacturer kukatpally", "eco-friendly bags kukatpally hyderabad", "custom paper bags kukatpally", "paper bag manufacturer kukatpally"],
   openGraph: {
     title: "Paper Bags Kukatpally - EcoBagsFactory",
     description: "Eco-friendly paper bags manufacturer in Kukatpally. Custom printing, wholesale pricing, same-day pickup.",

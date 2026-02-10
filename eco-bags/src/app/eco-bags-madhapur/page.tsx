@@ -8,7 +8,7 @@ import { Phone, CheckCircle, Building2, Briefcase } from "lucide-react";
 export const metadata: Metadata = {
   title: "Eco Bags Madhapur | Paper Bags HITEC City | EcoBagsFactory",
   description: "Eco-friendly paper bags for Madhapur and HITEC City businesses. EcoBagsFactory delivers custom printed bags to IT companies, startups, and retail stores. Bulk orders welcome. Call +91 9949826222.",
-  keywords: ["eco bags madhapur", "paper bags hitec city", "eco-friendly bags madhapur", "corporate paper bags hyderabad", "paper bags IT corridor"],
+  keywords: ["eco bags madhapur", "paper bags hitec city", "eco-friendly bags madhapur", "corporate paper bags hyderabad", "paper bags IT corridor", "paper bag manufacturer madhapur"],
   openGraph: {
     title: "Eco Bags Madhapur & HITEC City - EcoBagsFactory",
     description: "Eco-friendly paper bags for Madhapur's IT corridor and HITEC City businesses.",

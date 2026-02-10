@@ -8,7 +8,7 @@ import { Phone, CheckCircle, Sparkles, Award } from "lucide-react";
 export const metadata: Metadata = {
   title: "Paper Bags Banjara Hills | Premium Eco Bags | EcoBagsFactory",
   description: "Premium paper bags for Banjara Hills boutiques and luxury brands. EcoBagsFactory offers high-end eco-friendly bags with custom printing, gold foiling, and premium finishes. Call +91 9949826222.",
-  keywords: ["paper bags banjara hills", "eco bags banjara hills", "premium paper bags hyderabad", "luxury paper bags banjara hills", "boutique bags hyderabad"],
+  keywords: ["paper bags banjara hills", "eco bags banjara hills", "premium paper bags hyderabad", "luxury paper bags banjara hills", "boutique bags hyderabad", "paper bag manufacturer banjara hills"],
   openGraph: {
     title: "Paper Bags Banjara Hills - Premium Eco Bags",
     description: "Premium eco-friendly paper bags for Banjara Hills boutiques and luxury brands.",

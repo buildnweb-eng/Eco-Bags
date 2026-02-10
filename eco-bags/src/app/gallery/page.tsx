@@ -1,11 +1,12 @@
 import { Card } from "@/components/ui/card";
 import Image from "next/image";
+import Link from "next/link";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Gallery - EcoBagsFactory Product Showcase",
+  title: "Gallery - Paper Bag Manufacturer Hyderabad | EcoBagsFactory Product Showcase",
   description: "Browse our gallery of eco-friendly paper bags. See our diverse collection of sustainable packaging solutions, custom designs, and premium quality products.",
-  keywords: ["paper bags gallery", "eco-friendly packaging showcase", "custom bag designs", "sustainable products", "paper bags portfolio"],
+  keywords: ["paper bags gallery", "eco-friendly packaging showcase", "custom bag designs", "sustainable products", "paper bags portfolio", "paper bag manufacturer", "paper bag manufacturer hyderabad", "paper bag manufacturer gallery"],
   openGraph: {
     title: "EcoBagsFactory Gallery - Eco-friendly Paper Bags",
     description: "Browse our stunning collection of sustainable paper bags and custom designs.",
@@ -71,7 +72,8 @@ export default function Gallery() {
             Want to See Your Brand Here?
           </h2>
           <p className="text-xl text-muted-foreground mb-6 max-w-2xl mx-auto">
-            Let us create custom paper bags that showcase your unique brand identity
+            Let us create custom paper bags that showcase your unique brand identity.{" "}
+            <Link href="/paperbags-manufacturer" className="text-primary underline hover:opacity-80">Learn about our paper bag manufacturing</Link>.
           </p>
         </div>
       </div>

@@ -8,7 +8,7 @@ import { MapPin, Phone, Clock, Leaf, Recycle, Award, Truck, CheckCircle } from "
 export const metadata: Metadata = {
   title: "Eco Bags Hyderabad | #1 Paper Bags Manufacturer | EcoBagsFactory",
   description: "Looking for eco bags in Hyderabad? EcoBagsFactory is the leading manufacturer of eco-friendly paper bags. Custom printing, wholesale pricing, fast delivery across Hyderabad. Call +91 9949826222.",
-  keywords: ["eco bags hyderabad", "eco bags hyd", "paper bags hyderabad", "eco-friendly bags hyderabad", "paper bags manufacturer hyderabad", "custom paper bags hyderabad", "wholesale paper bags hyderabad"],
+  keywords: ["eco bags hyderabad", "eco bags hyd", "paper bags hyderabad", "eco-friendly bags hyderabad", "paper bags manufacturer hyderabad", "custom paper bags hyderabad", "wholesale paper bags hyderabad", "paper bag manufacturer hyderabad"],
   openGraph: {
     title: "Eco Bags Hyderabad - #1 Paper Bags Manufacturer",
     description: "Premium eco-friendly paper bags manufacturer in Hyderabad. Custom printing, wholesale pricing, all areas covered.",

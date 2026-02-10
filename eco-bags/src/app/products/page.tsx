@@ -6,8 +6,8 @@ import Image from "next/image";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "EcoBagsFactory Products | Paperbags Manufacturer India | Paper Bags Catalog Hyderabad",
-  description: "EcoBagsFactory paperbags manufacturer products - Browse premium paper bags from India's leading paperbags manufacturer. Custom printed bags, kraft paperbags, wholesale paper bags. Trusted paperbags manufacturer in Hyderabad serving India, UK, USA.",
+  title: "Paper Bags Catalog | Paper Bag Manufacturer Hyderabad | EcoBagsFactory Products",
+  description: "Browse premium paper bags from Hyderabad's leading paper bag manufacturer. EcoBagsFactory - trusted paper bag manufacturers offering custom printed bags, kraft paperbags, wholesale paper bags. Best paper bag manufacturer in Hyderabad serving India, UK, USA.",
   keywords: [
     "EcoBagsFactory products",
     "paperbags manufacturer products",
@@ -23,7 +23,12 @@ export const metadata: Metadata = {
     "paper bags Hyderabad",
     "ecobags hyd",
     "paperbags supplier India",
-    "bulk paper bags manufacturer"
+    "bulk paper bags manufacturer",
+    "paper bag manufacturer",
+    "paper bag manufacturers",
+    "paper bag manufacturer hyderabad",
+    "paper bag manufacturers hyderabad",
+    "paper bag manufacturer products"
   ],
   openGraph: {
     title: "EcoBagsFactory Products - Paperbags Manufacturer India | Paper Bags Catalog",
@@ -309,7 +314,9 @@ export default function Products() {
               Need Custom Solutions?
             </h2>
             <p className="text-xl text-muted-foreground mb-6 max-w-2xl mx-auto">
-              We offer fully customizable options to match your brand identity
+              We offer fully customizable options to match your brand identity. Visit our{" "}
+              <Link href="/paperbags-manufacturer" className="text-primary underline hover:opacity-80">paper bag manufacturer</Link>{" "}
+              page for manufacturing details.
             </p>
             <Link href="/custom-orders">
               <Button size="lg" variant="outline" className="bg-background">

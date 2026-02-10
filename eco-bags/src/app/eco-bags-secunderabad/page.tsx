@@ -8,7 +8,7 @@ import { MapPin, Phone, CheckCircle, Truck, Clock } from "lucide-react";
 export const metadata: Metadata = {
   title: "Eco Bags Secunderabad | Paper Bags Manufacturer | EcoBagsFactory",
   description: "Premium eco-friendly paper bags in Secunderabad. EcoBagsFactory delivers custom printed bags to Secunderabad, Malkajgiri, Alwal, Kompally. Fast delivery, wholesale pricing. Call +91 9949826222.",
-  keywords: ["eco bags secunderabad", "paper bags secunderabad", "eco-friendly bags secunderabad", "custom paper bags secunderabad", "paper bags manufacturer secunderabad"],
+  keywords: ["eco bags secunderabad", "paper bags secunderabad", "eco-friendly bags secunderabad", "custom paper bags secunderabad", "paper bags manufacturer secunderabad", "paper bag manufacturer secunderabad"],
   openGraph: {
     title: "Eco Bags Secunderabad - EcoBagsFactory",
     description: "Eco-friendly paper bags delivered to Secunderabad. Custom printing, wholesale prices.",

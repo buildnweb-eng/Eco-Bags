@@ -2,11 +2,12 @@ import { Card, CardContent } from "@/components/ui/card";
 import AboutGallery from "@/components/AboutGallery";
 import { Leaf, Users, Award, Target } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "About EcoBagsFactory - Leading Paperbags Manufacturer India | Our Story",
-  description: "About EcoBagsFactory - Premier paperbags manufacturer in India since 2010. 10M+ bags produced, 5000+ happy clients. Leading paper bags manufacturer in Hyderabad offering custom manufacturing, wholesale production. Trusted ecobags manufacturer with 100% recyclable bags.",
+  title: "About EcoBagsFactory - Paper Bag Manufacturer Hyderabad | Paperbags Manufacturer India",
+  description: "About EcoBagsFactory - Premier paper bag manufacturer in Hyderabad, India since 2010. 10M+ bags produced, 5000+ happy clients. Leading paper bag manufacturer and paper bag manufacturers in Hyderabad offering custom manufacturing, wholesale production. Trusted paperbags manufacturer with 100% recyclable bags.",
   keywords: [
     "about EcoBagsFactory",
     "paperbags manufacturer India",
@@ -17,7 +18,11 @@ export const metadata: Metadata = {
     "eco-friendly manufacturer",
     "paper bags company Hyderabad",
     "custom paperbags manufacturer",
-    "wholesale paper bags manufacturer"
+    "wholesale paper bags manufacturer",
+    "paper bag manufacturer",
+    "paper bag manufacturer hyderabad",
+    "paper bag manufacturers hyderabad",
+    "paper bag manufacturer india"
   ],
   openGraph: {
     title: "About EcoBagsFactory - Leading Paperbags Manufacturer India",
@@ -75,7 +80,9 @@ export default function About() {
             </p>
             <p className="text-muted-foreground leading-relaxed">
               Starting with a small workshop and a commitment to sustainability,
-              we&apos;ve grown into a trusted partner for businesses across the country.
+              we&apos;ve grown into a trusted{" "}
+              <Link href="/paperbags-manufacturer" className="text-primary underline hover:opacity-80">paper bag manufacturer in Hyderabad</Link>{" "}
+              and a partner for businesses across the country.
               Every bag we produce is a step toward a greener tomorrow.
             </p>
             <p className="text-muted-foreground leading-relaxed">

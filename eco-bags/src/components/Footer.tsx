@@ -15,7 +15,7 @@ const Footer = () => {
               <span className="text-2xl font-bold text-primary">EcoBagsFactory</span>
             </div>
             <p className="text-sm text-muted-foreground">
-              Eco-friendly Paper Bags for a Greener Tomorrow
+              Paper Bag Manufacturer in Hyderabad - Eco-friendly Paper Bags for a Greener Tomorrow
             </p>
             <div className="flex items-center gap-2 text-primary">
               <Leaf className="w-5 h-5" />
@@ -73,6 +73,14 @@ const Footer = () => {
                   className="text-sm text-muted-foreground hover:text-primary transition-colors"
                 >
                   Blog
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/paperbags-manufacturer"
+                  className="text-sm text-muted-foreground hover:text-primary transition-colors"
+                >
+                  Paper Bag Manufacturer
                 </Link>
               </li>
               <li>
@@ -184,7 +192,7 @@ const Footer = () => {
         </div>
 
         <div className="border-t border-border mt-8 pt-8 text-center text-sm text-muted-foreground">
-          <p>© {new Date().getFullYear()} EcoBags. All rights reserved.</p>
+          <p>© {new Date().getFullYear()} EcoBagsFactory - Paper Bag Manufacturer Hyderabad. All rights reserved.</p>
         </div>
       </div>
     </footer>

@@ -8,11 +8,11 @@ import { Metadata } from "next";
 import FactoryShowcase from "@/components/FactoryShowcase";
 
 export const metadata: Metadata = {
-  title: "Paperbags Manufacturer India | EcoBagsFactory | Paper Bags Manufacturer - ecobags paperbags",
-  description: "EcoBagsFactory - Leading paperbags manufacturer in India. Premier paper bags manufacturer offering custom paperbags manufacturing, wholesale ecobags manufacturing, bulk production. Trusted paperbags manufacturer in Hyderabad, India, and UK. Professional ecobags manufacturer and paperbags manufacturer delivering 100% recyclable bags. Buy from the best paperbags manufacturer - EcoBagsFactory delivers across India.",
-  keywords: ["paperbags manufacturer", "paperbags manufacturer India", "paperbags manufacturer Hyderabad", "paperbags manufacturer hyd", "paperbags manufacturer UK", "paper bags manufacturer", "paper bags manufacturer India", "ecobags manufacturer", "ecobags manufacturer India", "EcoBagsFactory", "EcoBags Factory", "EcoBagsFactory hyd", "Eco Bags Factory", "custom paperbags manufacturer", "printed paperbags manufacturer", "kraft paperbags manufacturer", "wholesale paperbags manufacturer", "bulk paperbags manufacturer", "shopping bags manufacturer", "gift bags manufacturer", "grocery bags manufacturer", "retail bags manufacturer", "carry bags manufacturer", "recyclable bags manufacturer", "biodegradable bags manufacturer", "sustainable packaging manufacturer", "eco friendly bags manufacturer"],
+  title: "Paper Bag Manufacturer Hyderabad | EcoBagsFactory | Paperbags Manufacturer India - ecobags paperbags",
+  description: "Best paper bag manufacturer in Hyderabad. EcoBagsFactory - Leading paperbags manufacturer in India. Premier paper bags manufacturer offering custom paperbags manufacturing, wholesale ecobags manufacturing, bulk production. Trusted paperbags manufacturer in Hyderabad, India, and UK. Professional ecobags manufacturer and paperbags manufacturer delivering 100% recyclable bags. Buy from the best paperbags manufacturer - EcoBagsFactory delivers across India.",
+  keywords: ["paperbags manufacturer", "paperbags manufacturer India", "paperbags manufacturer Hyderabad", "paperbags manufacturer hyd", "paperbags manufacturer UK", "paper bags manufacturer", "paper bags manufacturer India", "ecobags manufacturer", "ecobags manufacturer India", "EcoBagsFactory", "EcoBags Factory", "EcoBagsFactory hyd", "Eco Bags Factory", "custom paperbags manufacturer", "printed paperbags manufacturer", "kraft paperbags manufacturer", "wholesale paperbags manufacturer", "bulk paperbags manufacturer", "shopping bags manufacturer", "gift bags manufacturer", "grocery bags manufacturer", "retail bags manufacturer", "carry bags manufacturer", "recyclable bags manufacturer", "biodegradable bags manufacturer", "sustainable packaging manufacturer", "eco friendly bags manufacturer", "paper bag manufacturer", "paper bag manufacturers", "paper bag manufacturer hyderabad", "paper bag manufacturers hyderabad", "paper bag manufacturer in hyderabad", "paper bag manufacturer india", "paper bag manufacturers near me"],
   openGraph: {
-    title: "Paperbags Manufacturer India | EcoBagsFactory - Paper Bags Manufacturer",
+    title: "Paper Bag Manufacturer Hyderabad | EcoBagsFactory - Paperbags Manufacturer India",
     description: "EcoBagsFactory - Leading paperbags manufacturer in India. Premier paper bags manufacturer. Custom paperbags manufacturing, wholesale, bulk orders. Trusted paperbags manufacturer delivering nationwide.",
     images: ["/hero-bags.jpg"],
   },
@@ -550,6 +550,43 @@ export default function Home() {
         }}
       />
 
+      {/* FAQ Schema targeting "Paper Bag Manufacturer" keywords */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "Who is the best paper bag manufacturer in Hyderabad?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "EcoBagsFactory is the best paper bag manufacturer in Hyderabad, India. Established in 2010, EcoBagsFactory is a trusted paper bag manufacturer serving 5000+ clients with 10M+ bags produced. Our paper bag manufacturer facility in Kukatpally, Hyderabad offers custom, wholesale, and bulk paper bag manufacturing with delivery across India, UK, and USA."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "How to find a paper bag manufacturer near me in Hyderabad?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "EcoBagsFactory is a leading paper bag manufacturer located in Kukatpally, Hyderabad. As Hyderabad's top paper bag manufacturer, we serve all areas including Banjara Hills, Madhapur, Gachibowli, HITEC City, Secunderabad, Jubilee Hills, Kondapur, Ameerpet, and across Telangana. Contact the paper bag manufacturer at +91 9949826222 or email eco4bags@gmail.com."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "What makes EcoBagsFactory the top paper bag manufacturer in India?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "EcoBagsFactory is India's top paper bag manufacturer with ISO certified manufacturing, 10M+ bags produced, 5000+ satisfied clients, and 100% eco-friendly production. As a paper bag manufacturer in Hyderabad, we offer competitive pricing, 7-14 day delivery, custom printing, and GSM options from 140-300. We are the preferred paper bag manufacturer for brands like Neerus, Almond House, Ramraj Cotton, and Cafe Niloufer."
+                }
+              }
+            ]
+          })
+        }}
+      />
+
       {/* Our Clients Section - Infinite Auto Scroll */}
       <section className="py-20 earth-gradient overflow-hidden">
         <div className="container mx-auto px-4">
@@ -636,7 +673,8 @@ export default function Home() {
                 Ready to Go Green?
               </h2>
               <p className="text-xl mb-8 opacity-90 max-w-2xl mx-auto">
-                Join thousands of businesses making the switch to sustainable packaging
+                Join thousands of businesses making the switch to sustainable packaging with Hyderabad&apos;s leading{" "}
+                <Link href="/paperbags-manufacturer" className="underline hover:opacity-80">paper bag manufacturer</Link>
               </p>
               <Link href="/contact">
                 <Button size="lg" variant="secondary" className="bg-white text-primary hover:bg-white/90 cursor-pointer">

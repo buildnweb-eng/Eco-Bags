@@ -6,11 +6,11 @@ import Image from "next/image";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Paperbags Manufacturer India | Leading Paper Bags Manufacturer - EcoBagsFactory",
-  description: "EcoBagsFactory - Premier paperbags manufacturer in India. Professional paper bags manufacturer offering custom paperbags manufacturing, wholesale production, bulk orders. Trusted paperbags manufacturer in Hyderabad, India, and UK. Expert ecobags manufacturer delivering 100% recyclable bags nationwide. Contact the best paperbags manufacturer today!",
-  keywords: ["paperbags manufacturer", "paperbags manufacturer India", "paperbags manufacturer Hyderabad", "paperbags manufacturer hyd", "paperbags manufacturer UK", "paper bags manufacturer", "paper bags manufacturer India", "paper bags manufacturer Hyderabad", "ecobags manufacturer", "custom paperbags manufacturer", "wholesale paperbags manufacturer", "bulk paperbags manufacturer", "EcoBagsFactory"],
+  title: "Paper Bag Manufacturer in Hyderabad | Paper Bag Manufacturers India - EcoBagsFactory",
+  description: "EcoBagsFactory - Top paper bag manufacturer in Hyderabad, India. Premier paperbags manufacturer offering custom paper bags manufacturing, wholesale production, bulk orders. Trusted paper bag manufacturer and paper bag manufacturers serving Hyderabad, India, and UK. Expert ecobags manufacturer delivering 100% recyclable bags. Contact the best paper bag manufacturer today!",
+  keywords: ["paperbags manufacturer", "paperbags manufacturer India", "paperbags manufacturer Hyderabad", "paperbags manufacturer hyd", "paperbags manufacturer UK", "paper bags manufacturer", "paper bags manufacturer India", "paper bags manufacturer Hyderabad", "ecobags manufacturer", "custom paperbags manufacturer", "wholesale paperbags manufacturer", "bulk paperbags manufacturer", "EcoBagsFactory", "paper bag manufacturer", "paper bag manufacturers", "paper bag manufacturer hyderabad", "paper bag manufacturers hyderabad", "paper bag manufacturer in hyderabad", "paper bag manufacturer india", "paper bag manufacturers near me", "best paper bag manufacturer in hyderabad"],
   openGraph: {
-    title: "Paperbags Manufacturer India | EcoBagsFactory - Paper Bags Manufacturer",
+    title: "Paper Bag Manufacturer Hyderabad | EcoBagsFactory - Paperbags Manufacturer India",
     description: "Leading paperbags manufacturer in India. Premier paper bags manufacturer offering custom manufacturing, wholesale, bulk orders. Trusted paperbags manufacturer.",
     images: ["/factory/factory-enhanced-1.1.jpeg"],
   },
@@ -57,11 +57,11 @@ export default function PaperbagsManufacturer() {
   const manufacturerSchema = {
     "@context": "https://schema.org",
     "@type": "Manufacturer",
-    "name": "EcoBagsFactory - Paperbags Manufacturer",
-    "alternateName": ["Paperbags Manufacturer India", "Paper Bags Manufacturer", "Paperbags Manufacturer Hyderabad"],
+    "name": "EcoBagsFactory - Paper Bag Manufacturer Hyderabad",
+    "alternateName": ["Paperbags Manufacturer India", "Paper Bags Manufacturer", "Paperbags Manufacturer Hyderabad", "Paper Bag Manufacturer Hyderabad", "Paper Bag Manufacturers Hyderabad", "Paper Bag Manufacturer in Hyderabad", "Paper Bag Manufacturers in Hyderabad", "Paper Bag Manufacturer India", "Best Paper Bag Manufacturer Hyderabad"],
     "url": "https://ecobagsfactory.org/paperbags-manufacturer",
     "logo": "https://ecobagsfactory.org/hero-bags.jpg",
-    "description": "Leading paperbags manufacturer in India. Professional paper bags manufacturer offering custom paperbags manufacturing, wholesale production, and bulk orders.",
+    "description": "Leading paper bag manufacturer in Hyderabad, India. Professional paper bag manufacturers offering custom paper bags manufacturing, wholesale production, and bulk orders. EcoBagsFactory - trusted paperbags manufacturer since 2010.",
     "address": {
       "@type": "PostalAddress",
       "streetAddress": "Plot No. 91, Rajiv Gandhi Nagar, Prashanthi Nagar, Kukatpally",
@@ -93,10 +93,10 @@ export default function PaperbagsManufacturer() {
     "mainEntity": [
       {
         "@type": "Question",
-        "name": "Why choose EcoBagsFactory as your paperbags manufacturer?",
+        "name": "Why choose EcoBagsFactory as your paper bag manufacturer in Hyderabad?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "EcoBagsFactory is India's trusted paperbags manufacturer since 2010 with 10M+ bags produced. We offer competitive pricing, fast delivery, ISO quality standards, and 100% eco-friendly manufacturing. As a leading paper bags manufacturer in Hyderabad, we serve clients across India, UK, and USA."
+          "text": "EcoBagsFactory is India's trusted paper bag manufacturer and paperbags manufacturer since 2010 with 10M+ bags produced. As a leading paper bag manufacturer in Hyderabad, we offer competitive pricing, fast delivery, ISO quality standards, and 100% eco-friendly manufacturing. EcoBagsFactory is among the top paper bag manufacturers serving clients across India, UK, and USA."
         }
       },
       {
@@ -138,6 +138,30 @@ export default function PaperbagsManufacturer() {
           "@type": "Answer",
           "text": "EcoBagsFactory paperbags manufacturer facility maintains ISO quality standards and uses FSC-certified paper. As a responsible paper bags manufacturer, all our products are 100% recyclable and biodegradable, meeting international eco-friendly packaging standards."
         }
+      },
+      {
+        "@type": "Question",
+        "name": "What are the benefits of choosing a local paper bag manufacturer in Hyderabad?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Choosing a local paper bag manufacturer in Hyderabad like EcoBagsFactory offers faster delivery, lower shipping costs, easy quality checks, and direct communication. As a Hyderabad-based paper bag manufacturer, we provide same-day consultations, factory visits, and quick turnaround for urgent orders across Telangana and India."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What paper bag sizes does the paper bag manufacturer offer?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "EcoBagsFactory paper bag manufacturer offers all standard and custom sizes: small gift bags (6x6x4 inch), medium retail bags (9x8x8 inch, 12x8x3.5 inch), large shopping bags (14x10x4 inch, 15x12x4 inch), extra large bags (15.25x18.65x4 inch, 17x12x5 inch). As a custom paper bag manufacturer, we also manufacture any size to your specifications."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How to place a bulk order with EcoBagsFactory paper bag manufacturer?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "To place a bulk order with EcoBagsFactory paper bag manufacturer: 1) Visit ecobagsfactory.org/custom-orders 2) Fill in your requirements (size, GSM, printing, quantity) 3) Our paper bag manufacturer team reviews within 24 hours 4) Receive mockups and pricing 5) Approve and production starts. Minimum order: 500 pieces. Call +91 9949826222 for immediate quotes."
+        }
       }
     ]
   };
@@ -158,15 +182,15 @@ export default function PaperbagsManufacturer() {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="text-4xl md:text-6xl font-bold text-foreground mb-6">
-              Leading <span className="text-primary">Paperbags Manufacturer</span> in India
+              <span className="text-primary">Paper Bag Manufacturer</span> in Hyderabad, India
             </h1>
             <p className="text-xl text-muted-foreground mb-4">
-              EcoBagsFactory - Premier Paper Bags Manufacturer
+              EcoBagsFactory - Leading Paper Bag Manufacturer &amp; Paper Bag Manufacturers
             </p>
             <p className="text-lg text-muted-foreground mb-8 max-w-3xl mx-auto">
-              Professional paperbags manufacturer offering custom paperbags manufacturing, wholesale paper bags production, 
-              and bulk manufacturing services. Trusted paperbags manufacturer in Hyderabad, India, and UK delivering 
-              100% eco-friendly, recyclable, and biodegradable bags since 2010.
+              Top paper bag manufacturer in Hyderabad offering custom paper bags manufacturing, wholesale paper bags production,
+              and bulk manufacturing services. EcoBagsFactory is among the most trusted paper bag manufacturers in India,
+              delivering 100% eco-friendly, recyclable, and biodegradable bags since 2010.
             </p>
             <div className="flex flex-wrap gap-4 justify-center">
               <Link href="/custom-orders">
@@ -189,7 +213,7 @@ export default function PaperbagsManufacturer() {
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-4">
-              Why Choose Our <span className="text-primary">Paperbags Manufacturing</span>
+              Why Choose Our <span className="text-primary">Paper Bag Manufacturing</span>
             </h2>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
               Leading paperbags manufacturer with state-of-the-art facilities
@@ -259,7 +283,7 @@ export default function PaperbagsManufacturer() {
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>
               <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
-                Professional <span className="text-primary">Paperbags Manufacturing</span> Process
+                Professional <span className="text-primary">Paper Bag Manufacturer</span> Process
               </h2>
               <p className="text-lg text-muted-foreground mb-6">
                 As a leading paperbags manufacturer, we follow strict quality control and manufacturing 
@@ -308,13 +332,84 @@ export default function PaperbagsManufacturer() {
         </div>
       </section>
 
+      {/* Paper Bag Manufacturer - Areas We Serve */}
+      <section className="py-20 earth-gradient">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto">
+            <div className="text-center mb-16">
+              <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-4">
+                Paper Bag Manufacturer - <span className="text-primary">Areas We Serve</span>
+              </h2>
+              <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
+                As the leading paper bag manufacturer in Hyderabad, EcoBagsFactory delivers premium paper bags across all major areas
+              </p>
+            </div>
+
+            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4">
+              {[
+                { name: "Kukatpally", href: "/paper-bags-kukatpally" },
+                { name: "Banjara Hills", href: "/paper-bags-banjara-hills" },
+                { name: "Madhapur", href: "/eco-bags-madhapur" },
+                { name: "Gachibowli", href: "/paper-bags-gachibowli" },
+                { name: "Secunderabad", href: "/eco-bags-secunderabad" },
+                { name: "Jubilee Hills", href: "/eco-bags-jubilee-hills" },
+                { name: "Kondapur", href: "/paper-bags-kondapur" },
+                { name: "Ameerpet", href: "/eco-bags-ameerpet" },
+              ].map((area) => (
+                <Link
+                  key={area.name}
+                  href={area.href}
+                  className="bg-card p-4 rounded-lg border border-border/50 text-center hover:border-primary/50 transition-colors"
+                >
+                  <span className="font-medium text-foreground">Paper Bag Manufacturer in {area.name}</span>
+                </Link>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Why Choose a Trusted Paper Bag Manufacturer */}
+      <section className="py-20 bg-background">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-8 text-center">
+              Why Choose a Trusted <span className="text-primary">Paper Bag Manufacturer</span>
+            </h2>
+            <div className="space-y-6 text-lg text-muted-foreground">
+              <p>
+                Choosing the right paper bag manufacturer is crucial for your business. A reliable paper bag manufacturer
+                ensures consistent quality, timely delivery, and competitive pricing. EcoBagsFactory has been a trusted
+                paper bag manufacturer in Hyderabad since 2010, serving over 5000 businesses with premium eco-friendly bags.
+              </p>
+              <p>
+                As one of the leading paper bag manufacturers in India, EcoBagsFactory combines state-of-the-art manufacturing
+                technology with skilled craftsmanship. Our paper bag manufacturer facility in Kukatpally, Hyderabad is equipped
+                with advanced printing and cutting machines that produce bags ranging from 140 GSM to 300 GSM.
+              </p>
+              <p>
+                Working with an experienced paper bag manufacturer like EcoBagsFactory means you get access to custom printing
+                options including spot UV, gold foiling, matt and gloss lamination. Our paper bag manufacturers team handles
+                everything from design to delivery, making us the preferred paper bag manufacturer for brands like Neerus,
+                Almond House, Ramraj Cotton, and Cafe Niloufer.
+              </p>
+              <p>
+                Environmental responsibility sets EcoBagsFactory apart from other paper bag manufacturers. Every bag from our
+                paper bag manufacturer facility is 100% recyclable and biodegradable, helping your business reduce its carbon
+                footprint while maintaining premium packaging quality.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* CTA Section */}
       <section className="py-20 earth-gradient">
         <div className="container mx-auto px-4">
           <Card className="eco-gradient border-0">
             <CardContent className="p-12 text-center text-white">
               <h2 className="text-4xl md:text-5xl font-bold mb-4">
-                Partner with India's Leading Paperbags Manufacturer
+                Partner with Hyderabad&apos;s Leading Paper Bag Manufacturer
               </h2>
               <p className="text-xl mb-8 opacity-90 max-w-3xl mx-auto">
                 EcoBagsFactory - Your trusted paperbags manufacturer for custom manufacturing, 
