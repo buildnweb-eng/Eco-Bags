@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Script from "next/script";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
@@ -297,6 +298,20 @@ export default function RootLayout({
         </div>
         <Toaster />
         <Sonner />
+
+        {/* Google tag (gtag.js) — GA4 + Google Ads: G-MVER1PGB7G */}
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-MVER1PGB7G"
+          strategy="afterInteractive"
+        />
+        <Script id="gtag-init" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-MVER1PGB7G');
+          `}
+        </Script>
       </body>
     </html>
   );
